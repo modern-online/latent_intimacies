@@ -32,7 +32,6 @@ preload_models()
 model = Model(r"vosk-model-small-en-us-0.15")
 recognizer = KaldiRecognizer(model, 16000)
 
-chatbot = ChatBot('Demolition')
 
 # Mic Stream
 mic = pyaudio.PyAudio()
@@ -41,7 +40,12 @@ stream = mic.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, fr
 print("FINISHED LOADING")
 
 def process_and_train():
+    os.remove("./db.sqlite3-wal")
+    os.remove("./db.sqlite3-shm")
+    os.remove("./db.sqlite3")
 
+    global chatbot
+    chatbot = ChatBot('Demolition')
     trainer = ListTrainer(chatbot)
 
     with open("./clean_data/clean_data.txt", encoding="utf8") as text:
