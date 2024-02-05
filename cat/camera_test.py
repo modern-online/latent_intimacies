@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import cv2
 
 # Open a camera (0 is usually the default camera)

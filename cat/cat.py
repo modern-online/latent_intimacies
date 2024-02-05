@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import torch
 from transformers import AutoTokenizer, CLIPImageProcessor, AutoModel, AutoModelForCausalLM
 from transformers.models.auto.configuration_auto import AutoConfig
