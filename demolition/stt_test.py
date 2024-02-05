@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from bark import SAMPLE_RATE, generate_audio, preload_models
 from scipy.io.wavfile import write as write_wav
 import sounddevice as sd

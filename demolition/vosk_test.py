@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from vosk import Model, KaldiRecognizer
 import pyaudio
 

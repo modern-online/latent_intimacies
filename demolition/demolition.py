@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from bark import SAMPLE_RATE, generate_audio, preload_models
