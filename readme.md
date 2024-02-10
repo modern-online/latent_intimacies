@@ -15,7 +15,7 @@ Our first study, <em>Demolition</em>, is site-specific, a block of concrete enca
 
 Emotions become embedded in latent space. Residue and resonance of past performances of generosity, care, and intimacy echo in the chambers of everyday life.
 
-“I invite you to take a part of me.”
+<em>“I invite you to take a part of me.”</em>
 
 Using automation to erase unfavourable memories of past experiences liberates us from the fangs of yesterday. Confronting textual snippets of the past, stripped from their original context, can supply catharsis. At the same time, the interaction allows users to gauge and adjust their level of engagement, during the difficult process of mourning and moving on. 
 
@@ -33,7 +33,7 @@ The future is uncertain. People experience uncertainty as a source of discomfort
 
 The Red Book is a curated language model, trained on texts (often books) contributed by its users. A group looking for answers designates a spokesperson to address the Book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, interpreting the needs and interests of others in the group. Some questions linger, unanswered. As the interaction draws to a close, the speaker seeks permission to leave. 
 
-"Your presence is no longer required."
+<em>"Your presence is no longer required."</em>
 
 ## Study #3: <em>Cats</em>
 #### Intimacy through latency, the delay between a cause and its effect.
@@ -44,7 +44,7 @@ This study intertwines the daily lives of cats, their caretakers, and the commun
 
 Cats takes an hour to load, and roughly 40 minutes to compute a text describing a randomly taken image. The AI outputs around ten images a day; ten short texts spoken aloud, captioning everyday moments seen through a cat’s eyes. We seek connection, closeness, and this device forces us to wait, tracking the low-maintenance intimacies of pet ownership. Cats have latency. Durations of absence are experienced when you go about your ordinary everyday life outside the home, leaving your furry friend alone during business hours. 
 
-“I saw a man sleeping on a bench in a grassy park.”
+<em>“I saw a man sleeping on a bench in a grassy park.”</em>
 
 Other technologies promise to monitor our pets, but plug-and-play surveillance casts them as captives, not peers. Giving your cat a voice introduces an alternative context. Cats casts the language model as a wearable minor technology. Its technical limitations demand patience. Rather than inundating users with a barrage of texts and images, Cats yawns and stretches, relaxing into the interval between outputs.
 
