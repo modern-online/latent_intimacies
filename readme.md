@@ -1,5 +1,6 @@
 # <em>Latent Intimacies</em>
-#### Medialab Matadero : Prototyping Lab 03 : Synthetic Minds 
+##### Medialab Matadero : Prototyping Lab 03 : Synthetic Minds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 What is a “latent intimacy”? Where do we catch glimpses of intimacy in today’s human-machine interactions? And what else could intimacy be? A latent intimacy is, for us, a gesture to AI’s potential to propose alternative forms of intimacy, echoing semantic accidents captured in earlier, more primitive human-machine interactions. 
 
