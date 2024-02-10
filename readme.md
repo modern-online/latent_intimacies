@@ -7,7 +7,8 @@ In Latent Intimacies, we used interviews, observation, and prototyping to produc
 
 What else could AI be? We approached the language model as a minor technology, detached from scalar norms of efficiency and optimisation. (Anderson and Cox, 2023; Fartan, 2023) These raw studies are small-scale, contrarian technologies, standing apart from the dominant narratives of technology and innovation. Our three prototypes have little commercial value, but they provide alternative routes into the digital world, promising slower, more considered connections than those currently offered by cloud-based AI platforms.
 
-### Prototype #1: <em>Demolition</em>
+### Study #1: <em>Demolition</em>
+##### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
 Our first study, <em>Demolition</em>, is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. We can ask anything we want, and the voice agent will try to give the best possible answer, by sampling text from this tiny, intimate dataset. It will then ask us to judge if its answer is relevant.
 
@@ -18,3 +19,6 @@ Emotions become embedded in latent space. Residue and resonance of past performa
 Using automation to erase unfavourable memories of past experiences liberates us from the fangs of yesterday. Confronting textual snippets of the past, stripped from their original context, can supply catharsis. At the same time, the interaction allows users to gauge and adjust their level of engagement, during the difficult process of mourning and moving on. 
 
 Exit. Exist. Enter. Erase. Repeat.
+
+### Study #2: <em>Red Book</em>
+
