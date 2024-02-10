@@ -57,7 +57,6 @@ Moises Ramirez,
 Marbles the Cat  
 
 ### Acknowledgements
-
 ‘Latent Intimacies’ was produced as part of Medialab Matadero’s LAB#03 Synthetic Minds Collaborative Prototyping Lab, which ran from January 24–February 10 2024. Our heartfelt thanks to Alan Warburton, Patrick Harrison, Irma Pužauskaitė, Laura Forlano, Tim Cowlishaw, Vasundhra Dahiya, Rohit Gupta, David Hayward, Valdis Silins, Charlie Loyd, Michelle Kasprzak, and Murphy (another cat).
 
 ### References
