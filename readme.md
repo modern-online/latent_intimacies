@@ -1,2 +1,2 @@
-# Medialab Matadero
-### Latent Intimacies Prototype Code 2024
+# <em>Latent Intimacies</em>
+### Medialab Matadero : Prototyping Lab 03 : Synthetic Minds 
