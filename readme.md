@@ -1,6 +1,4 @@
 # <em>Latent Intimacies</em>
-##### Medialab Matadero : Prototyping Lab 03 : Synthetic Minds
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 What is a “latent intimacy”? Where do we catch glimpses of intimacy in today’s human-machine interactions? And what else could intimacy be? A latent intimacy is, for us, a gesture to AI’s potential to propose alternative forms of intimacy, echoing semantic accidents captured in earlier, more primitive human-machine interactions. 
 
@@ -21,5 +19,30 @@ Using automation to erase unfavourable memories of past experiences liberates us
 
 Exit. Exist. Enter. Erase. Repeat.
 
+
 ### Study #2: <em>Red Book</em>
+##### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
+
+The <em>Red Book</em> is inspired by a mystical social game played by Mexican children. Blending chance, prophecy, and divination, playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
+
+The future is uncertain. People experience uncertainty as a source of discomfort and unease. It can leave them feeling vulnerable and precarious, threatening what they know of their place in the world. Given this, who do people turn to for answers, advice, guidance?
+
+The Red Book is a curated language model, trained on texts (often books) contributed by its users. A group looking for answers designates a spokesperson to address the Book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, interpreting the needs and interests of others in the group. Some questions linger, unanswered. As the interaction draws to a close, the speaker seeks permission to leave. 
+
+"Your presence is no longer required."
+
+### Study #3: <em>Cats</em>
+##### Intimacy through latency, the delay between a cause and its effect.
+
+This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, Cats offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
+
+Cats takes an hour to load, and roughly 40 minutes to compute a text describing a randomly taken image. The AI outputs around ten images a day; ten short texts spoken aloud, captioning everyday moments seen through a cat’s eyes. We seek connection, closeness, and this device forces us to wait, tracking the low-maintenance intimacies of pet ownership. Cats have latency. Durations of absence are experienced when you go about your ordinary everyday life outside the home, leaving your furry friend alone during business hours. 
+
+“I saw a man sleeping on a bench in a grassy park.”
+
+Other technologies promise to monitor our pets, but plug-and-play surveillance casts them as captives, not peers. Giving your cat a voice introduces an alternative context. Cats casts the language model as a wearable minor technology. Its technical limitations demand patience. Rather than inundating users with a barrage of texts and images, Cats yawns and stretches, relaxing into the interval between outputs.
+
+
+##### This project has been created as part of Medialab Matadero : Prototyping Lab 03 (2024) : Synthetic Minds
+
 
