@@ -34,7 +34,7 @@ The Red Book is a curated language model, trained on texts (often books) contrib
 ### Study #3: <em>Cats</em>
 ##### Intimacy through latency, the delay between a cause and its effect.
 
-![Alt text]([image link](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg))
+![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg)
 
 This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, Cats offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
