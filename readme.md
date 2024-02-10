@@ -6,8 +6,8 @@ In Latent Intimacies, we used interviews, observation, and prototyping to produc
 
 What else could AI be? We approached the language model as a minor technology, detached from scalar norms of efficiency and optimisation. (Anderson and Cox, 2023; Fartan, 2023) These raw studies are small-scale, contrarian technologies, standing apart from the dominant narratives of technology and innovation. Our three prototypes have little commercial value, but they provide alternative routes into the digital world, promising slower, more considered connections than those currently offered by cloud-based AI platforms.
 
-### Study #1: <em>Demolition</em>
-##### Intimacy through vulnerability, the capacity to be damaged or harmed.
+## Study #1: <em>Demolition</em>
+#### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
 ![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
 
