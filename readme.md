@@ -22,8 +22,8 @@ Using automation to erase unfavourable memories of past experiences liberates us
 Exit. Exist. Enter. Erase. Repeat.
 
 
-### Study #2: <em>Red Book</em>
-##### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
+## Study #2: <em>Red Book</em>
+#### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
 
 The <em>Red Book</em> is inspired by a mystical social game played by Mexican children. Blending chance, prophecy, and divination, playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
 
@@ -33,8 +33,8 @@ The Red Book is a curated language model, trained on texts (often books) contrib
 
 "Your presence is no longer required."
 
-### Study #3: <em>Cats</em>
-##### Intimacy through latency, the delay between a cause and its effect.
+## Study #3: <em>Cats</em>
+#### Intimacy through latency, the delay between a cause and its effect.
 
 ![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg)
 
