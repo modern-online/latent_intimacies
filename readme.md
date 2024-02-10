@@ -34,6 +34,8 @@ The Red Book is a curated language model, trained on texts (often books) contrib
 ### Study #3: <em>Cats</em>
 ##### Intimacy through latency, the delay between a cause and its effect.
 
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg))
+
 This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, Cats offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
 Cats takes an hour to load, and roughly 40 minutes to compute a text describing a randomly taken image. The AI outputs around ten images a day; ten short texts spoken aloud, captioning everyday moments seen through a cat’s eyes. We seek connection, closeness, and this device forces us to wait, tracking the low-maintenance intimacies of pet ownership. Cats have latency. Durations of absence are experienced when you go about your ordinary everyday life outside the home, leaving your furry friend alone during business hours. 
