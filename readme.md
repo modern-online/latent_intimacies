@@ -48,6 +48,14 @@ Cats takes an hour to load, and roughly 40 minutes to compute a text describing 
 
 Other technologies promise to monitor our pets, but plug-and-play surveillance casts them as captives, not peers. Giving your cat a voice introduces an alternative context. Cats casts the language model as a wearable minor technology. Its technical limitations demand patience. Rather than inundating users with a barrage of texts and images, Cats yawns and stretches, relaxing into the interval between outputs.
 
+### Credits:
+Vytas Jankauskas, 
+Paulina Casas, 
+Janire Goikoetxea, 
+Justin Pickard, 
+Moises Ramirez, 
+Marbles the Cat
+
 
 ##### This project has been created as part of Medialab Matadero : Prototyping Lab 03 (2024) : Synthetic Minds
 
