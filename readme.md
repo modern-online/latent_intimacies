@@ -49,14 +49,20 @@ Cats takes an hour to load, and roughly 40 minutes to compute a text describing 
 Other technologies promise to monitor our pets, but plug-and-play surveillance casts them as captives, not peers. Giving your cat a voice introduces an alternative context. Cats casts the language model as a wearable minor technology. Its technical limitations demand patience. Rather than inundating users with a barrage of texts and images, Cats yawns and stretches, relaxing into the interval between outputs.
 
 ### Credits:
-Vytas Jankauskas, 
-Paulina Casas, 
-Janire Goikoetxea, 
-Justin Pickard, 
-Moises Ramirez, 
-Marbles the Cat
+Vytas Jankauskas,   
+Paulina Casas,   
+Janire Goikoetxea,  
+Justin Pickard,  
+Moises Ramirez,  
+Marbles the Cat  
 
+### Acknowledgements
 
-##### This project has been created as part of Medialab Matadero : Prototyping Lab 03 (2024) : Synthetic Minds
+‘Latent Intimacies’ was produced as part of Medialab Matadero’s LAB#03 Synthetic Minds Collaborative Prototyping Lab, which ran from January 24–February 10 2024. Our heartfelt thanks to Alan Warburton, Patrick Harrison, Irma Pužauskaitė, Laura Forlano, Tim Cowlishaw, Vasundhra Dahiya, Rohit Gupta, David Hayward, Valdis Silins, Charlie Loyd, Michelle Kasprzak, and Murphy (another cat).
+
+### References
+Andersen, C. U., & Cox, G. (2023). Toward a Minor Tech. A Peer-Reviewed Journal About, 12(1), 5–9. https://doi.org/10.7146/aprja.v12i1.140431  
+Bogost, I. (2012). Alien Phenomenology, or, What It’s Like to Be a Thing. University of Minnesota Press.  
+Fartan, T. S. (2023). Rendering post-anthropocentric visions: Worlding as a practice of resistance. A Peer-Reviewed Journal About, 12(1), 43–60. https://doi.org/10.7146/aprja.v12i1.140437
 
 
