@@ -51,7 +51,7 @@ Other technologies promise to monitor our pets, but plug-and-play surveillance c
 ### Credits:
 Vytas Jankauskas,   
 Paulina Casas,   
-Janire Goikoetxea, 
+Janire Goikoetxea,  
 Valeria Castillo,  
 Justin Pickard,  
 Moises Ramirez,  
