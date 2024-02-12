@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Vytas Jankauska 
+# This code has been tested on RPi Zero 2W 
 
 print("LOADING TORCH")
 import torch
@@ -41,6 +43,10 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[voice].id)
 
 # Read and speak out all the captions from the previous session
+## Doing this before loading models into memory for interaction purposes 
+### (previous recordings are read soon after device startup)
+#### It's because you need to wait 60min for models to load on an RPi Zero 2W
+
 try:
     with open(captions_file, 'r+') as f:
         previous_captions = f.readlines()
