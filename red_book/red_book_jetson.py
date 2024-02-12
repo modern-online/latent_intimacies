@@ -27,7 +27,6 @@ summon = [f for f in os.listdir("./audio_data/summon/") if f != ".DS_Store" ]
 thinking = [f for f in os.listdir("./audio_data/thinking/") if f != ".DS_Store" ]
 generated_tts = "tts.wav"
 
-
 # Timeout counter
 empty_loop_count = 0
 
@@ -48,7 +47,7 @@ model_bark = BarkModel.from_pretrained("suno/bark-small", torch_dtype=torch.floa
 sample_rate = model_bark.generation_config.sample_rate
 
 #################################################
-# ENABLE ON JETSON AND TEST
+# ENABLE ON JETSON AND TEST FOR PERFORMANCE
 model_bark.enable_cpu_offload()
 model_bark.to_bettertransformer()
 #################################################
@@ -56,7 +55,6 @@ model_bark.to_bettertransformer()
 # Load STT models
 stt_model = Model(r"vosk-model-small-en-us-0.15")
 recognizer = KaldiRecognizer(stt_model, 16000)
-
 
 print("FINISHED LOADING")
 
@@ -88,9 +86,7 @@ def play_audio(container, file):
     sd.play(data, fs)
     status = sd.wait()  # Wait until file is done playing 
 
-
-# ===========================================================================
-    
+# ===========================================================================    
 
 try:
     while True:
@@ -161,8 +157,6 @@ try:
 
             else: 
                 empty_loop_count+=1
-
-
 
         except Exception as e:
             print(e)
