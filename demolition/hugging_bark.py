@@ -10,7 +10,7 @@ sample_rate = model.generation_config.sample_rate
 model.enable_cpu_offload()
 model =  model.to_bettertransformer()
 
-inputs = processor(["Hello, my dog is cute"], return_tensors="pt")
+inputs = processor(["Hello, my dog is cute"], return_tensors="pt").to(device)
 
 audio_array = model.generate(**inputs, do_sample=True)
 print(audio_array)
