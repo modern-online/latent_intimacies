@@ -107,7 +107,7 @@ Install **torch**, a grand module for machine learning. It's a bit hefty and it 
 
 **If you've made it to here, the worst is beyond.**
 
-Install remaining modules using [pip](https://pypi.org/project/pip/). Pip is a python package manager that comes pre-installed with your Python, basically software that installs other software.
+Install remaining modules using [pip](https://pypi.org/project/pip/). Pip is a python package manager that comes pre-installed with your Python, basically software that installs other software.  
 ``` pip install wheel```  
 don't worry much about what this one does, it just makes some further installations a bit faster  
 ```pip install transformers```  
@@ -122,7 +122,7 @@ this installs the necessary engine for text-to-speech to work
 The "datastore" directory should be created in the cats directory:  
 ```mkdir datastore```  
 ```cd datastore```  
-to download them via the command line, you can use wget:
+to download them via the command line, you can use wget:  
 ```sudo apt-get install wget```  
 then:  
 ```wget LINK_FROM_SMALLCAP_INSTRUCTIONS```   
@@ -131,17 +131,17 @@ to download the files.
 **Create a data folder**
 Go back to cats directory  
 ``cd ..``  
-to go one folder back
+to go one folder back  
 ``makedir data``  
 to create a data directory where the text file and the latest image will be store
 
 ### Testing
 
-Make sure the virtual environment is activated. 
+Make sure the virtual environment is activated.  
 ``` python camera_test.py ```  
-tests your opencv library and if you didn't get any errors, a photo should stored in the /data folder. 
+tests your opencv library and if you didn't get any errors, a photo should stored in the /data folder.  
 ``` python tts_test.py ```  
-tests your text to speech and lists all available voice ids. You can then modify the cats.py code with the voice ID you like
+tests your text to speech and lists all available voice ids. You can then modify the cats.py code with the voice ID you like.  
 ``` python cats.py ```  
 launches the main script. It takes ages. 
 
@@ -159,8 +159,10 @@ it will wait 40s before launching the script to make sure all other system proce
 ```source catenvironment/bin/activate &&```  
 ```python cats.py```  
 This esentially allows the system to pretend to be you and execute the same sequence of actions that you would to run the script.  
-```sudo reboot```
-Then see if everything executes on its own! 
+```sudo reboot```  
+Then see if everything executes on its own!  
+
+DONE. 
 
 
 
