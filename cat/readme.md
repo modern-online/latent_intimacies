@@ -95,12 +95,72 @@ enter cats folder
 creates a new virtual environment in a folder called catenvironment. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python).   
 ```source catenvironment/bin/activate```  
 activates the virtual environment.   
-You should now see <br>(catenvironment)</br> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
+You should now see <em>(catenvironment)</em> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
 **(3)** Installing Python modules needed for the code to run.  
 
+#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI most of the latest/standard versions would not work, so it's better to just install whatever the latest supported thing would be. 
 
+Install **OpenCV** (to be able to capture images with the camera):  
+```sudo apt install python3-opencv```  
+Install **torch**, a grand module for machine learning. It's a bit hefty and it requires some special configurations for RPi, hence the best strategy is to install using wheel. Follow this [tutorial](https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html). It's for a RPi4 but works for Zero as well provided you use BULLSEYE OS. Just scroll down to the yellow table and copy the code.  
 
+**If you've made it to here, the worst is beyond.**
+
+Install remaining modules using [pip](https://pypi.org/project/pip/). Pip is a python package manager that comes pre-installed with your Python, basically software that installs other software.
+``` pip install wheel```  
+don't worry much about what this one does, it just makes some further installations a bit faster  
+```pip install transformers```  
+this one is a module on top of torch to do all kinds of machine learning  
+```pip install pyttsx3```  
+this one is a small text-to-speak module  
+```sudo apt-get install -y libespeak-dev```   
+this installs the necessary engine for text-to-speech to work 
+
+**Make sure to download all the files needed for [Smallcap](https://github.com/RitaRamo/smallcap) to run, following the instuctions on their github.**
+
+The "datastore" directory should be created in the cats directory:  
+```mkdir datastore```  
+```cd datastore```  
+to download them via the command line, you can use wget:
+```sudo apt-get install wget```  
+then:  
+```wget LINK_FROM_SMALLCAP_INSTRUCTIONS```   
+to download the files. 
+
+**Create a data folder**
+Go back to cats directory  
+``cd ..``  
+to go one folder back
+``makedir data``  
+to create a data directory where the text file and the latest image will be store
+
+### Testing
+
+Make sure the virtual environment is activated. 
+``` python camera_test.py ```  
+tests your opencv library and if you didn't get any errors, a photo should stored in the /data folder. 
+``` python tts_test.py ```  
+tests your text to speech and lists all available voice ids. You can then modify the cats.py code with the voice ID you like
+``` python cats.py ```  
+launches the main script. It takes ages. 
+
+### Automating
+
+Once all your scripts are running with success, you can automate the launch of Cats, by adding the procedure to .bashrc, just like we did with the bluetooth speaker setup:
+
+```cd```  
+to make sure we're in home directory  
+```sudo nano .bashrc```  
+to edit the file. Scroll to the bottom, and after the bluetooth config lines, add:  
+```sleep 40``` 
+it will wait 40s before launching the script to make sure all other system processes kick in.  
+```cd /home/YOURUSERNAME/latent_intimacies/cats &&```  
+```source catenvironment/bin/activate &&```  
+```python cats.py```  
+This esentially allows the system to pretend to be you and execute the same sequence of actions that you would to run the script.  
+```sudo reboot```
+Then see if everything executes on its own! 
 
 
 
