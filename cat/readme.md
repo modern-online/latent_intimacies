@@ -102,7 +102,7 @@ You should now see <em>(catenvironment)</em> on the left of your command line. P
 
 **(3)** Installing Python modules needed for the code to run.  
 
-#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI most of the latest/standard versions would not work, so it's better to just install whatever the latest supported thing would be. 
+#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI, most of the latest/standard versions would not work. Hence it's best to just figure out the latest Pi-supported module version depending on your OS.
 
 Install **OpenCV** (to be able to capture images with the camera):  
 ```sudo apt install python3-opencv```  
