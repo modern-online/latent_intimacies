@@ -25,7 +25,7 @@ Exit. Exist. Enter. Erase. Repeat.
 ## Study #2: <em>Red Book</em>
 #### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
 
-![redbook](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book.jpg)
+![redbook](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_new.jpg)
 
 The <em>Red Book</em> is inspired by a mystical social game played by Mexican children. Blending chance, prophecy, and divination, playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
 
