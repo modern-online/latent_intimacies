@@ -6,6 +6,16 @@ Essentially, cats is a wearable virtual companion. It uses computer vision to ta
 
 Cats stores things it sees in a text file. Every time you turn it on, it will describe everything it has seen so far. Images are not stored. 
 
+## A little disclaimer: 
+This is a somewhat detailed tutorial as it is aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate level project that requires some fundemantal understanding of computers as well as having dealt with creative coding in the past. For those who know their way around, the essentials are:
+
+(1) Setting up a RPI with the required components  
+(2) Installing the right OS  
+(3) Pairing a bluetooth speaker/headphones
+(4) Installing python modules (with some somewhat more problematic than others, i.e. torch) 
+(5) Downloading required models and captions (notably [Smallcap](https://github.com/RitaRamo/smallcap) related stuff) 
+(6) Automating 
+
 ## Hardware
 
 Our device runs on a [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), coupled with a compatible [battery pack](https://www.pisugar.com/), compatible camera like [this one](https://www.adafruit.com/product/3508) (there are many camera options online just make sure you get one with the right ribbon cable as the one for Pi Zero is smaller that the regular Raspberry Pi). Finally, we used a 5eur. bluetooth speaker but we tested Bluetooth headphones as well and got them working with a bit of a grind. If you play your cards right, the device can be built for 50-60eur. For putting things together, each of these items have their respective tutorials and documentation. You might need a soldering iron to solder the header pins onto the Raspberry Pi, in order for the battery to work. 
@@ -60,7 +70,33 @@ This will force-connect the speaker on startup, provided the speaker is on when 
 
 ### Setting up Python 
 
-Good news is that Python is already installed on RPi OS, so we can skip to installation of the actual project files. 
+Good news is that Python is already installed on RPi OS, so we can skip to the installation of the actual project files. 
+
+**(1)** Cloning this Github repository with project files and cleaning things up a bit. 
+
+```cd```  
+to make sure you're in home directory
+```sudo apt-get install git```  
+to install git
+```git clone https://github.com/modern-online/latent_intimacies.git```
+to download the directory of this project   
+```cd latent intimacies```  
+to enter the folder
+```sudo rm -r demolition```  
+```sudo rm -r red_book```  
+to delete files related to other projects. 
+
+
+**(2)** Setting up a working directory and a [virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The advantage of it is that it keeps original Python folder intact, so in case you mess something up, you can just delete the virtual environment and start again. 
+
+```cd cats ``` 
+enter cats folder  
+```python -m venv catenvironment```  
+creates a new virtual environment in a folder called catenvironment. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python). 
+```source catenvironment/bin/activate```  
+activates the virtual environment. You should now see <br>(catenvironment)</br> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
+
+**(3)** Installing Python modules needed for the code to run.  
 
 
 
