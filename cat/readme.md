@@ -39,6 +39,7 @@ Please note that the code itself is not very complicated, but to get it to run o
 **(2)** Once you have your OS running, you can either plug your PI into a screen with a keyboard and mouse (a bit of a mess of USB and HDMI adapters for Pi Zero) or [SSH](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/) login into it remotely from your computer, provided you're on the same WiFi network. 
 
 **(3)** A couple of system configurations needed:  
+
 **Expanding filesystem memory.** When you install a Pi OS, it only takes the part of the SD card that is needed to run the system itself. You then need to explicitly grant the computer access to the remaining SD card space. 
 
 In the terminal, type:  
