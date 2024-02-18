@@ -22,11 +22,11 @@ Please note that the code itself is not very complicated, but to get it to run o
 
 ### Getting your RPi Ready (somewhat easy) 
 
-(1) To get your Rpi Zero up and running, follow this (or similar) [tutorial](https://howtohifi.com/beginners-guide-to-raspberry-pi-os-installation/). IMPORTANT: The project was built in February, 2024, and the latest OS by RPi was not yet compatible with Pytorch, therefore we used RASPBIAN BULLSEYE LITE, the headless earlier version of the OS. Make sure to configure the network connection as you'll need it for the installation. 
+**(1)** To get your Rpi Zero up and running, follow this (or similar) [tutorial](https://howtohifi.com/beginners-guide-to-raspberry-pi-os-installation/). IMPORTANT: The project was built in February, 2024, and the latest OS by RPi was not yet compatible with Pytorch, therefore we used RASPBIAN BULLSEYE LITE, the headless earlier version of the OS. Make sure to configure the network connection as you'll need it for the installation. 
 
-(2) Once you have your OS running, you can either plug your PI into a screen with a keyboard and mouse (a bit of a mess of USB and HDMI adapters for Pi Zero) or [SSH](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/) login into it remotely from your computer, provided you're on the same WiFi network. 
+**(2)** Once you have your OS running, you can either plug your PI into a screen with a keyboard and mouse (a bit of a mess of USB and HDMI adapters for Pi Zero) or [SSH](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/) login into it remotely from your computer, provided you're on the same WiFi network. 
 
-(3) A couple of system configurations needed:  
+**(3)** A couple of system configurations needed:  
 **Expanding filesystem memory.** When you install a Pi OS, it only takes the part of the SD card that is needed to run the system itself. You then need to explicitly grant the computer access to the remaining SD card space. 
 
 In the terminal, type:  
@@ -42,15 +42,18 @@ and follow any on-screen instructions. Once done, reboot either through the inte
 
 Follow this [tutorial](https://pimylifeup.com/raspberry-pi-swap-file/) to increase swap. We had a big SD so went all out by increasing to 16GB (16000 mb), but probably 4-8gb would work, too. Protip: A good SD card can make a huge difference as increasing reading/writing speed has direct impact on the process. The most expensive is not always the best; here's a good [guide](https://www.tomshardware.com/best-picks/raspberry-pi-microsd-cards) on SD cards that work well on RPis.
 
-(4) Connecting a Blueetooth device (speaker or headphones). This one is a bit of a pain. This expansive albeit somewhat messy [tutorial](https://forums.raspberrypi.com/viewtopic.php?t=235519) will probably do the trick. Just read carefully and don't blindly copy-paste stuff because not all of the tutorial is relevant (i.e. the part with the USB dongle). A couple of tips:
+**(4)** Connecting a Blueetooth device (speaker or headphones). This one is a bit of a pain. This expansive albeit somewhat messy [tutorial](https://forums.raspberrypi.com/viewtopic.php?t=235519) will probably do the trick. Just read carefully and don't blindly copy-paste stuff because not all of the tutorial is relevant (i.e. the part with the USB dongle). A couple of tips:
 
 — Always turn the bluetooth device on before turning on the PI, to make sure they connect. 
 — Even after following tutorials, the PI would fail to automatically connect to our 5eur. speaker. What did the trick was to trust, pair the device (as explained in the tutorial), then add a line in the .bashrc file (it's a system file that executes things upon startup of the system), like this:
 
-```cd``` (to make sure you're in your home folder)  
-```sudo nano .bashrc``` (to open the file with a command line text editor called Nano)  
+```cd```  
+(to make sure you're in your home folder)    
+```sudo nano .bashrc```  
+(to open the file with a command line text editor called Nano)  
 Scroll to the very bottom, then add:  
-```bluetoothctl connect YOURDEVICEID``` (hopefully you've gotten the ID by following the tutorial).  
+```bluetoothctl connect YOURDEVICEID```  
+(hopefully you've gotten the ID by following the tutorial).  
 Then press CTRL+X to save the file, and the Y key to confirm.  
 This will force-connect the speaker on startup, provided the speaker is on when RPi powers up. 
 
