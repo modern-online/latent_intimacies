@@ -1,5 +1,7 @@
 ## About Cats
 
+(cats)[https://github.com/modern-online/latent_intimacies/blob/main/images/cats_live.jpg]
+
 Cats is one of the three prototypes we built during a LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid. Please refer to the main page of the repository for more information regarding the projet. 
 
 Essentially, cats is a wearable virtual companion. It uses computer vision to take photos, then describes those photos through image captioning using text-to-speech. It runs on a battery, operates offline, and due to its tiny architecture, takes long time to load and compute. Cats takes around 60 minutes to boot, then captures a photo, which takes another 45 minutes to process. Subsequently, you have a new photo description every 45 minutes, spoken aloud. The user has no control over the device, except from turning it on and off, and taking it places.
