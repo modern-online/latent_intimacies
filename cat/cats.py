@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Vytas Jankauska 
+# Vytas Jankauskas 
 # This code has been tested on RPi Zero 2W 
 
 print("LOADING TORCH")
