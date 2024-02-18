@@ -13,9 +13,9 @@ This is a somewhat detailed tutorial as it is aimed at our principal audience, a
 
 (1) Setting up a RPI with the required components  
 (2) Installing the right OS  
-(3) Pairing a bluetooth speaker/headphones
-(4) Installing python modules (with some somewhat more problematic than others, i.e. torch) 
-(5) Downloading required models and captions (notably [Smallcap](https://github.com/RitaRamo/smallcap) related stuff) 
+(3) Pairing a bluetooth speaker/headphones  
+(4) Installing python modules (with some somewhat more problematic than others, i.e. torch)  
+(5) Downloading required models and captions (notably [Smallcap](https://github.com/RitaRamo/smallcap) related stuff)  
 (6) Automating 
 
 ## Hardware
