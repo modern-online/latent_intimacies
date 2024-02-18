@@ -75,13 +75,13 @@ Good news is that Python is already installed on RPi OS, so we can skip to the i
 **(1)** Cloning this Github repository with project files and cleaning things up a bit. 
 
 ```cd```  
-to make sure you're in home directory
+to make sure you're in home directory  
 ```sudo apt-get install git```  
-to install git
-```git clone https://github.com/modern-online/latent_intimacies.git```
+to install git  
+```git clone https://github.com/modern-online/latent_intimacies.git```  
 to download the directory of this project   
 ```cd latent intimacies```  
-to enter the folder
+to enter the folder  
 ```sudo rm -r demolition```  
 ```sudo rm -r red_book```  
 to delete files related to other projects. 
@@ -89,12 +89,13 @@ to delete files related to other projects.
 
 **(2)** Setting up a working directory and a [virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The advantage of it is that it keeps original Python folder intact, so in case you mess something up, you can just delete the virtual environment and start again. 
 
-```cd cats ``` 
-enter cats folder  
+```cd cats ```  
+enter cats folder    
 ```python -m venv catenvironment```  
-creates a new virtual environment in a folder called catenvironment. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python). 
+creates a new virtual environment in a folder called catenvironment. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python).   
 ```source catenvironment/bin/activate```  
-activates the virtual environment. You should now see <br>(catenvironment)</br> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
+activates the virtual environment.   
+You should now see <br>(catenvironment)</br> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
 **(3)** Installing Python modules needed for the code to run.  
 
