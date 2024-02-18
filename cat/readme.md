@@ -51,7 +51,7 @@ Follow this [tutorial](https://pimylifeup.com/raspberry-pi-swap-file/) to increa
 ```sudo nano .bashrc``` (to open the file with a command line text editor called Nano)  
 Scroll to the very bottom, then add:  
 ```bluetoothctl connect YOURDEVICEID``` (hopefully you've gotten the ID by following the tutorial).  
-Then press CTRL+X to save the file, and the Y key to confirm. 
+Then press CTRL+X to save the file, and the Y key to confirm.  
 This will force-connect the speaker on startup, provided the speaker is on when RPi powers up. 
 
 
