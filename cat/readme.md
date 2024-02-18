@@ -24,14 +24,13 @@ Please note that the code itself is not very complicated, but to get it to run o
 
 (1) To get your Rpi Zero up and running, follow this (or similar) [tutorial](https://howtohifi.com/beginners-guide-to-raspberry-pi-os-installation/). IMPORTANT: The project was built in February, 2024, and the latest OS by RPi was not yet compatible with Pytorch, therefore we used RASPBIAN BULLSEYE LITE, the headless earlier version of the OS. 
 
-(2) Once you have your OS running, you can either plug your PI into a screen with a keyboard and mouse (a bit of a mess of USB and HDMI adapters for Pi Zero) or (SSH)[https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/] login into it remotely from your computer, provided you're on the same WiFi network. 
+(2) Once you have your OS running, you can either plug your PI into a screen with a keyboard and mouse (a bit of a mess of USB and HDMI adapters for Pi Zero) or [SSH](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/) login into it remotely from your computer, provided you're on the same WiFi network. 
 
 (3) A couple of system configurations needed:  
 Expanding filesystem memory. When you install a Pi OS, it only takes the part of the SD card that is needed to run the system itself. You then need to explicitly grant the computer access to the remaining SD card space. 
 
 In the terminal, type:
-```sudo raspi-config --expand-rootfs```
-follow any on-screen instructions. Once done, reboot either through the interactive menu, or by typing
+```sudo raspi-config --expand-rootfs```  and follow any on-screen instructions. Once done, reboot either through the interactive menu, or by typing  
 ```sudo reboot```
 
 
