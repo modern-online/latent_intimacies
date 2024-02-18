@@ -1,6 +1,6 @@
 ## About Cats
 
-(cats)[https://github.com/modern-online/latent_intimacies/blob/main/images/cats_live.jpg]
+![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats_live.jpg)
 
 Cats is one of the three prototypes we built during a LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid. Please refer to the main page of the repository for more information regarding the projet. 
 
