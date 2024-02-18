@@ -8,7 +8,7 @@ Cats stores things it sees in a text file. Every time you turn it on, it will de
 
 ## Hardware
 
-Our device runs on a [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), coupled with a compatible [battery pack](https://www.pisugar.com/), compatible camera like [this one](https://www.adafruit.com/product/3508) (there are many camera options online just make sure you get one with the right ribbon cable as the one for Pi Zero is smaller that the regular Raspberry Pi). Finally, we used a 5eur. bluetooth speaker but we tested Bluetooth headphones as well and got them working with a bit of a grind. If you play your cards right, the device can be built for 50-60eur. 
+Our device runs on a [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), coupled with a compatible [battery pack](https://www.pisugar.com/), compatible camera like [this one](https://www.adafruit.com/product/3508) (there are many camera options online just make sure you get one with the right ribbon cable as the one for Pi Zero is smaller that the regular Raspberry Pi). Finally, we used a 5eur. bluetooth speaker but we tested Bluetooth headphones as well and got them working with a bit of a grind. If you play your cards right, the device can be built for 50-60eur. For putting things together, each of these items have their respective tutorials and documentation. You might need a soldering iron to solder the header pins onto the Raspberry Pi, in order for the battery to work. 
 
 ## Software
 
@@ -56,6 +56,12 @@ Scroll to the very bottom, then add:
 (hopefully you've gotten the ID by following the tutorial).  
 Then press CTRL+X to save the file, and the Y key to confirm.  
 This will force-connect the speaker on startup, provided the speaker is on when RPi powers up. 
+
+
+### Setting up Python 
+
+Good news is that Python is already installed on RPi OS, so we can skip to installation of the actual project files. 
+
 
 
 
