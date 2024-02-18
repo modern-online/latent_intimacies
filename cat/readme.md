@@ -48,7 +48,7 @@ Follow this [tutorial](https://pimylifeup.com/raspberry-pi-swap-file/) to increa
 — Even after following tutorials, the PI would fail to automatically connect to our 5eur. speaker. What did the trick was to trust, pair the device (as explained in the tutorial), then add a line in the .bashrc file (it's a system file that executes things upon startup of the system), like this:
 
 ```cd``` (to make sure you're in your home folder)  
-```sudo nano .bashrc``` (to open the file with a command line text editor called Nano) 
+```sudo nano .bashrc``` (to open the file with a command line text editor called Nano)  
 Scroll to the very bottom, then add:  
 ```bluetoothctl connect YOURDEVICEID``` (hopefully you've gotten the ID by following the tutorial).  
 Then press CTRL+X to save the file, and the Y key to confirm. 
