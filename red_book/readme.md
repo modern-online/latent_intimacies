@@ -6,7 +6,7 @@ The Red Book is a curated language model, trained on texts (often books) contrib
 
 ## Hardware
 
-Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), coupled with a plug-n-play [microphone and speaker bundle]](https://www.waveshare.com/usb-to-audio.htm).
+Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), coupled with a plug-n-play [microphone and speaker bundle](https://www.waveshare.com/usb-to-audio.htm).
 
 ## Software
 
