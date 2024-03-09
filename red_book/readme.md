@@ -79,7 +79,7 @@ Download nltk punkt. In terminal, type:
 ```nltk.download(punkt)```   
 ```exit()```  
 
-**(7)** Launching the script 
+## Launching the script
 
 Open terminal in the red book folder, activate the virtual environment, then type:   
 ```python red_book_jetson.py```   
