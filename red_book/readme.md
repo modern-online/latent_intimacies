@@ -81,8 +81,8 @@ Download nltk punkt. In terminal, type:
 
 **(7)** Launching the script 
 
-Open terminal in the red book folder, activate the virtual environment, then type : 
-python red_book_jetson.py  
+Open terminal in the red book folder, activate the virtual environment, then type:   
+```python red_book_jetson.py```   
 The first launch will take some time as transformers library will download the Bark model. 
 
 ## Automation 
