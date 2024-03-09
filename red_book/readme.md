@@ -31,7 +31,7 @@ Follow this [guide](https://developer.nvidia.com/embedded/learn/get-started-jets
 
 **(2)**  Update the system and install Jetpack Components  
 
-Open the terminal, then type:
+Open the terminal, then type:  
 ```sudo apt-get update```  
 ```sudo apt-get upgrade```  
 ```sudo apt-get install nvidia-jetpack```  
@@ -50,7 +50,7 @@ Inside the redbook folder, right-click then choose to open terminal. Type:
 This creates a new virtual environment in a folder called redenvironment. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python).   
 ```source redenvironment/bin/activate```  
 activates the virtual environment.   
-You should now see <em>(catenvironment)</em> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
+You should now see <em>(redenvironment)</em> on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
 **(5)** Installing Python modules
 
@@ -58,11 +58,11 @@ You should now see <em>(catenvironment)</em> on the left of your command line. P
 
 Install a precompiled **torch** (or you can compile but it will take a few hours):  
 Download a precompiled version [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). At the time, we used PyTorch v2.1.0 for Jetpack 5.  
-Put it in your the red-book folder. 
+Put it in your the red-book folder.   
 In terminal (assuming you're in the redbook folder, and that your virtual environment is active), type:  
 ```pip install [the name of the package you downloaded.whl]```  
 
-Install audio drivers: 
+Install audio drivers:  
 ```sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0```  
 ```sudo apt-get install ffmpeg libav-tools```  
 
@@ -75,7 +75,7 @@ Download a speech-to-text model of your choice (even small models work very well
 Download our custom fine-tuned GPT-Neo poetry model from [here](https://drive.google.com/file/d/1xbaOWP6rkfdtG4b-nqnbasEudCUlT1KE/view?usp=sharing) and put it in the red book folder.
 Download nltk punkt. In terminal, type:  
 ```python```  
-```import nltk``` 
+```import nltk```  
 ```nltk.download(punkt)```   
 ```exit()```  
 
@@ -91,24 +91,24 @@ Once all your scripts are running with success, you can automate the launch of R
 
 Open terminal.  
 ```cd```  
-to make sure we're in home directory
+to make sure we're in home directory  
 ```sudo nano .bashrc```   
-to edit the file. Scroll to the bottom, and after the bluetooth config lines, add:
-```sleep 40```  (it will wait 40s before launching the script to make sure all other system processes kick in.)
+to edit the file. Scroll to the bottom, and after the bluetooth config lines, add:  
+```sleep 40```  (it will wait 40s before launching the script to make sure all other system processes kick in)  
 ```cd /home/[path to red_book folder] &&```  
 ```source redenvironment/bin/activate &&```  
 ```python red_book_jetson.py```  
 ```ctrl+x``` to save then ```Y``` key to confirm.   
 
 Now search for "startup applications" in your Ubuntu's search bar, and add terminal to it so it can launch on startup:  
-Click "Add"  
-In the "name" field, type Terminal. 
-In the "command" field, type gnome-terminal  
-Click "Add"  
+Click <em>Add</em>  
+In the <em>name</em> field, type <em>Terminal</em>  
+In the <em>command</em> field, type <em>gnome-terminal</em>  
+Click <em>Add</em> 
 
-This esentially allows the system to pretend to be you and execute the same sequence of actions that you would to run the script.
+This esentially allows the system to pretend to be you and execute the same sequence of actions that you would to run the script.  
 ```sudo reboot```
-Then see if everything executes on its own!
+Then see if everything executes on its own!  
 
 DONE.
 
