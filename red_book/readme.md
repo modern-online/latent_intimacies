@@ -15,11 +15,11 @@ In general,the code was written in Python, and uses [Pytorch](https://pytorch.or
 ## A little disclaimer: 
 This is a somewhat detailed tutorial as it is aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate level project that requires some fundemantal understanding of computers as well as having dealt with creative coding in the past. For those who know their way around, the essentials are:
 
-(1) Setting up a Jetson Orin Nano Development Kit
-(2) Adding speakers and microphone
-(3) Installing python modules (with some somewhat more problematic than others, i.e. torch)  
-(4) Downloading/training/fine-tuning a custom language model
-(6) Automating 
+(1) Setting up a Jetson Orin Nano Development Kit  
+(2) Adding speakers and microphone  
+(3) Installing python modules (with some somewhat more problematic than others, i.e. torch)   
+(4) Downloading/training/fine-tuning a custom language model  
+(6) Automating  
 
 Please also note that the repository contains two main files red_book and red_book_jetson. The main difference between the two is that red_book implements Bark from [source](https://github.com/suno-ai/bark) and has been tested on MacOS whereas the red_book_jetson uses the implementation via [Huggingface](https://huggingface.co/docs/transformers/en/model_doc/bark). At the time of development we had troubles with Pytorch (torchaudio in particular) compatibility on Jetson Nano, and a different approach was implemented.  
 
