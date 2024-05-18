@@ -92,7 +92,7 @@ Things to keep in mind:
 (3) For the demolition script to work, the clean version of the data in a LIST format, must be placed in a clean_data.txt file, in clean_data subfolder within your demolition directory, like this: /clean_data/clean_data.txt  
 (4) demolition_jetson.py uses a smaller random sample of the entire dataset (our WhatsApp data was quite large and therefore constant re-training becomes slow). If your data is relatively small, you can modify line 74 to increase sample_size.  
 
-You can use our little scripts for translation (/utils/translate.py ; you will need to additionally install [deep_translator](https://pypi.org/project/deep-translator/) module via pip) as well as data cleaning (/utils/clean_text_data.py) but some adjustments are likely to be required based on text formatting. 
+You can use our little **scripts** for **translation** (/utils/translate.py ; you will need to additionally install [deep_translator](https://pypi.org/project/deep-translator/) module via pip) as well as **data cleaning** (/utils/clean_text_data.py) but some adjustments are likely to be required based on text formatting. 
 
 
 ## Launching the script
@@ -102,5 +102,41 @@ Open terminal in the demolition folder, activate the virtual environment, then t
 The first launch will take some time as transformers library will download the Bark model. 
 
 
+## Automation 
 
+**(1)** Automating the launch of the script
 
+Once all your scripts are running with success, you can automate the launch of Demolition, by adding the procedure to .bashrc (it's a system level script that executes when you open the terminal): 
+
+Open terminal.  
+```cd```  
+to make sure we're in home directory  
+```sudo nano .bashrc```   
+to edit the file. Scroll to the bottom, and after the bluetooth config lines, add:  
+```sleep 40```  (it will wait 40s before launching the script to make sure all other system processes kick in)  
+```cd /home/[path to demolition folder] &&```  
+```source demolenv/bin/activate &&```  
+```python demolition_jetson.py```  
+```ctrl+x``` to save then ```Y``` key to confirm.   
+
+Now search for "startup applications" in your Ubuntu's search bar, and add terminal to it so it can launch on startup:  
+Click <em>Add</em>  
+In the <em>name</em> field, type <em>Terminal</em>  
+In the <em>command</em> field, type <em>gnome-terminal</em>  
+Click <em>Add</em> 
+
+This esentially allows the system to pretend to be you and execute the same sequence of actions that you would to run the script.  
+```sudo reboot```
+Then see if everything executes on its own!  
+
+**(2)** (Optional) Automating connection to Bluetooth headset
+
+After a bit of wrangling, we managed to make Jetson Nano connect to Bluetooth headset with microphone automatically upon system start.  
+The best way would be to start with this detailed [blog post](https://ansonvandoren.com/posts/pulseaudio-auto-bluetooth-hfp-profile/).  
+The general concept is that you need to: 
+(1) pair the headset  
+(2) make system audio drivers recognize it as an audio device  
+(3) store the device profile in system configuration 
+(4) **IMPORTANT** Turn on the headset before turning on the Jetson (otherwise automatic pairing tends to fail)
+
+DONE.
