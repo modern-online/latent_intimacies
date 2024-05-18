@@ -41,17 +41,3 @@ for i, data in enumerate(clean_dataset):
 
 print(clean_dataset)
 
-# for data in dataset: 
-#     dat = remove_names(data)
-#     data = convert_emoji_to_text(data)
-#     # Random bits
-#     data = data.replace(":", "")
-#     data = data.replace(":", "")
-#     data = data.replace("<Media omitted>", "")
-#     clean_dataset.append(data)
-
-# print(str(clean_dataset))
-
-# with open("./dirty_data/WhatsApp Chat 2 [ES]_clean.txt", "w") as f:
-#     f.write(str(dataset))
-
