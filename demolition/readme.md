@@ -140,14 +140,14 @@ The general concept is that you need to:
 (4) **IMPORTANT** Turn on the headset before turning on the Jetson (otherwise automatic pairing tends to fail)  
 (5) Add a line in the .bashrc file (it's a system file that executes things upon startup of the system), like this:  
 
-cd
-(to make sure you're in your home folder)
-sudo nano .bashrc
-(to open the file with a command line text editor called Nano)
-Scroll to the very bottom, then add:
-bluetoothctl connect YOURDEVICEID
-(hopefully you've gotten the ID by following the tutorial).
-Then press CTRL+X to save the file, and the Y key to confirm.
+cd  
+(to make sure you're in your home folder)  
+```sudo nano .bashrc```  
+(to open the file with a command line text editor called Nano)  
+Scroll to the very bottom, then add:  
+```bluetoothctl connect YOURDEVICEID```  
+(hopefully you've gotten the ID by following the tutorial).  
+Then press CTRL+X to save the file, and the Y key to confirm.  
 This will force-connect the speaker on startup, provided the speaker is on when RPi powers up.
 
 DONE.
