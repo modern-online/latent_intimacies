@@ -3,6 +3,9 @@
 import re
 import emoji
 
+input_file_path = "YOUR WHATSAPP FILE.txt"
+output_file_path = "YOUR OUTPUT FILE.txt"
+
 clean_dataset = []
 
 def remove_names(dataset):
@@ -27,7 +30,7 @@ def convert_emoji_to_text(emoji_text):
     text_with_aliases = emoji.demojize(emoji_text)
     return text_with_aliases
 
-with open("./dirty_data/EN.txt", encoding="utf8") as text:
+with open(input_file_path, encoding="utf8") as text:
     dataset = text.read().split('\n')
 
 for data in dataset:
@@ -45,11 +48,5 @@ for i, data in enumerate(clean_dataset):
     if not data:
         clean_dataset.pop(i)
 
-#dialogue_pairs = [[clean_dataset[i], clean_dataset[i + 1]] for i in range(0, len(clean_dataset)-1, 2)]
-
-#print(dialogue_pairs)
-
-# print(str(clean_dataset))
-
-with open("./dirty_data/EN_clean.txt", "w+") as f:
+with open(output_file_path, "w+") as f:
         f.write(str(clean_dataset))
