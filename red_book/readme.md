@@ -19,7 +19,7 @@ This is a somewhat detailed tutorial as it is aimed at our principal audience, a
 (2) Adding speakers and microphone  
 (3) Installing python modules (with some somewhat more problematic than others, i.e. torch)   
 (4) Downloading/training/fine-tuning a custom language model  
-(6) Automating  
+(5) Automating  
 
 Please also note that the repository contains two main files red_book and red_book_jetson. The main difference between the two is that red_book implements Bark from [source](https://github.com/suno-ai/bark) and has been tested on MacOS whereas the red_book_jetson uses the implementation via [Huggingface](https://huggingface.co/docs/transformers/en/model_doc/bark). At the time of development we had troubles with Pytorch (torchaudio in particular) compatibility on Jetson Nano, and a different approach was implemented.  
 
