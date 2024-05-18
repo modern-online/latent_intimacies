@@ -133,8 +133,8 @@ Then see if everything executes on its own!
 
 After a bit of wrangling, we managed to make Jetson Nano connect to Bluetooth headset with microphone automatically upon system start.  
 The best way would be to start with this detailed [blog post](https://ansonvandoren.com/posts/pulseaudio-auto-bluetooth-hfp-profile/).  
-The general concept is that you need to: 
-(1) pair the headset (try looking at this [tutorial](https://forums.raspberrypi.com/viewtopic.php?t=235519)
+The general concept is that you need to:  
+(1) pair the headset (try looking at this [tutorial](https://forums.raspberrypi.com/viewtopic.php?t=235519)  
 (2) make system audio drivers recognize it as an audio device  
 (3) store the device profile in system configuration  
 (4) **IMPORTANT** Turn on the headset before turning on the Jetson (otherwise automatic pairing tends to fail)  
