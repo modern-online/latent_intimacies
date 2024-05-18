@@ -104,7 +104,7 @@ The first launch will take some time as transformers library will download the B
 
 ## Automation 
 
-**(1)** Automating the launch of the script
+**(1) Automating the launch of the script**
 
 Once all your scripts are running with success, you can automate the launch of Demolition, by adding the procedure to .bashrc (it's a system level script that executes when you open the terminal): 
 
@@ -129,7 +129,7 @@ This esentially allows the system to pretend to be you and execute the same sequ
 ```sudo reboot```
 Then see if everything executes on its own!  
 
-**(2)** (Optional) Automating connection to Bluetooth headset
+**(2) (Optional) Automating connection to Bluetooth headset**
 
 After a bit of wrangling, we managed to make Jetson Nano connect to Bluetooth headset with microphone automatically upon system start.  
 The best way would be to start with this detailed [blog post](https://ansonvandoren.com/posts/pulseaudio-auto-bluetooth-hfp-profile/).  
