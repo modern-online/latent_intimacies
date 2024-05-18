@@ -1,4 +1,3 @@
-#import translators as ts
 from deep_translator import GoogleTranslator
 
 file_name = "YOUR FILE TO BE TRANSLATED"
