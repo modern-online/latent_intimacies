@@ -1,7 +1,7 @@
 #import translators as ts
 from deep_translator import GoogleTranslator
 
-file_name = "./dirty_data/WhatsApp Chat [ES]_clean.txt"
+file_name = "YOUR FILE TO BE TRANSLATED"
 
 with open(file_name, encoding="utf8") as text:
     dataset = text.read().split("\n")
