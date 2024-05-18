@@ -10,7 +10,7 @@ Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](htt
 
 ## Software
 
-In general,the code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine leaarning modules for running [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark)text-to-speech (TTS) engine by Suno AI, and a small old module for training chatbots with tiny datasets, [Chatterbot](https://chatterbot.readthedocs.io/en/stable/).
+In general,the code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine leaarning modules for running [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) text-to-speech (TTS) engine by Suno AI, and a small old module for training chatbots with tiny datasets, [Chatterbot](https://chatterbot.readthedocs.io/en/stable/).
 
 
 ## A little disclaimer: 
