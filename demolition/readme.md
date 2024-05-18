@@ -84,13 +84,13 @@ replace yaml.load() with yaml.safe_load()
 ## Training Chatterbot with custom data
 
 We trained Chatterbot with our personal Whatsapp Messages. 
-Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training. 
+Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training.  
 
-Things to keep in mind: 
-(1) If you export data from different devices (i.e. exporting from iPhone and Android), the data cleaning might be slightly different. 
-(2) If you have messages in multiple languages, uniformising to a single language is necessary
-(3) For the demolition script to work, the clean version of the data in a LIST format, must be placed in a clean_data.txt file, in clean_data subfolder within your demolition directory, like this: /clean_data/clean_data.txt
-(4) demolition_jetson.py uses a smaller random sample of the entire dataset (our WhatsApp data was quite large and therefore constant re-training becomes slow). If your data is relatively small, you can modify line 74 to increase sample_size. 
+Things to keep in mind:  
+(1) If you export data from different devices (i.e. exporting from iPhone and Android), the data cleaning might be slightly different.  
+(2) If you have messages in multiple languages, uniformising to a single language is necessary.  
+(3) For the demolition script to work, the clean version of the data in a LIST format, must be placed in a clean_data.txt file, in clean_data subfolder within your demolition directory, like this: /clean_data/clean_data.txt  
+(4) demolition_jetson.py uses a smaller random sample of the entire dataset (our WhatsApp data was quite large and therefore constant re-training becomes slow). If your data is relatively small, you can modify line 74 to increase sample_size.  
 
 You can use our little scripts for translation (/utils/translate.py ; you will need to additionally install [deep_translator](https://pypi.org/project/deep-translator/) module via pip) as well as data cleaning (/utils/clean_text_data.py) but some adjustments are likely to be required based on text formatting. 
 
