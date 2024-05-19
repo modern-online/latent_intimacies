@@ -28,7 +28,7 @@ What else could AI be? We approached the language model as a minor technology, d
 ## Study #1: _Demolition_
 ### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
-![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition_live.JPG)
+![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
 
 Our first study, _Demolition_, is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. You can ask the voice agent anything you want, and it will try to supply the best possible answer, sampling text from this tiny, intimate dataset.
 
