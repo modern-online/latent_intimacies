@@ -26,7 +26,7 @@ What else could AI be? We approached the language model as a minor technology, d
 
 
 ## Study #1: _Demolition_
-#### Intimacy through vulnerability, the capacity to be damaged or harmed.
+### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
 ![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
 
@@ -42,7 +42,7 @@ Exit. Exist. Enter. Erase. Repeat.
 
 
 ## Study #2: _Red Book_
-#### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
+### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
 
 ![redbook](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_new.jpg)
 
@@ -58,7 +58,7 @@ A group looking for answers designates a spokesperson to address the Book, much 
 
 
 ## Study #3: _Cats_
-#### Intimacy through latency, the delay between a cause and its effect.
+### Intimacy through latency, the delay between a cause and its effect.
 
 ![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg)
 
@@ -73,24 +73,24 @@ Other technologies promise to monitor our pets, but plug-and-play surveillance c
 
 ## Contributing
 
-We welcome contributions. To contribute, please follow these steps:
+We welcome feedback and contributions. To contribute, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a new branch (`git checkout -b feature/WeirdFeature`)
+3. Commit your changes (`git commit -m 'Add some WeirdFeature'`)
+4. Push to the branch (`git push origin feature/WeirdFeature`)
 5. Open a pull request
 
 
 ## Credits
 
-Vytas Jankauskas
-Paulina Casas
-Janire Goikoetxea
-Valeria Castillo
-Justin Pickard
-Moises Ramirez
-Marbles the Cat  
+- Vytas Jankauskas
+- Paulina Casas
+- Janire Goikoetxea
+- Valeria Castillo
+- Justin Pickard
+- Moises Ramirez
+- Marbles the Cat  
 
 
 ## Acknowledgements
