@@ -28,7 +28,7 @@ What else could AI be? We approached the language model as a minor technology, d
 ## Study #1: _Demolition_
 ### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
-![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg) ![demolition-live-2](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition_live_2.jpg)
+![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
 
 Our first study, _Demolition_, is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. You can ask the voice agent anything you want, and it will try to supply the best possible answer, sampling text from this tiny, intimate dataset.
 
@@ -44,7 +44,7 @@ Exit. Exist. Enter. Erase. Repeat.
 ## Study #2: _Red Book_
 ### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
 
-![redbook](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_new.jpg) ![demolition-live-2](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_live.jpg)
+![red book](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_live.jpg)
 
 Inspired by a mystical social game played by Mexican children, _Red Book_ blends chance, prophecy, and divination. Playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement; leaving without permission may have undesirable consequences.
 
@@ -60,7 +60,7 @@ A group looking for answers designates a spokesperson to address the Book, much 
 ## Study #3: _Cats_
 ### Intimacy through latency, the delay between a cause and its effect.
 
-![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg) ![demolition-live-2](https://github.com/modern-online/latent_intimacies/blob/main/images/cats_fitting.jpg)
+![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats_fitting.jpg)
 
 This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, _Cats_ offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
