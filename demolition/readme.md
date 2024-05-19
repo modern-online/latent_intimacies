@@ -75,7 +75,7 @@ You should now see _(redenvironment)_ on the left of your command line. Please r
 
 5. Installing Python modules
 
-#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
 
 Install a precompiled **torch** (or you can compile but it will take a few hours):  
 Download a precompiled version [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). At the time, we used PyTorch v2.1.0 for Jetpack 5.  
@@ -126,7 +126,7 @@ The first launch will take some time as transformers library will download the B
 
 ## Automation 
 
-### Automating the launch of the script
+#### Automating the launch of the script
 
 Once all your scripts are running with success, you can automate the launch of _Demolition_, by adding the procedure to .bashrc (it's a system level script that executes when you open the terminal): 
 
@@ -151,7 +151,7 @@ This esentially allows the system to pretend to be you and execute the same sequ
 ```sudo reboot```
 Then see if everything executes on its own!  
 
-### (Optional) Automating connection to Bluetooth headset
+#### (Optional) Automating connection to Bluetooth headset
 
 After a bit of wrangling, we managed to make Jetson Nano connect to Bluetooth headset with microphone automatically upon system start.  
 The best way would be to start with this detailed [blog post](https://ansonvandoren.com/posts/pulseaudio-auto-bluetooth-hfp-profile/).  

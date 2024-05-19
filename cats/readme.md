@@ -54,7 +54,7 @@ This is a somewhat detailed tutorial as it is aimed at our principal audience, a
 
 Please note that the code itself is not very complicated, but to get it to run on this particular architecture is a bit of a hassle. 
 
-### Preparing the RPi (somewhat easy) 
+#### Preparing the RPi (relatively easy) 
 
 1. To get your Rpi Zero up and running, follow this (or similar) [tutorial](https://howtohifi.com/beginners-guide-to-raspberry-pi-os-installation/). IMPORTANT: The project was built in February 2024, and the latest OS by RPi was not yet compatible with Pytorch, therefore we used RASPBIAN BULLSEYE LITE, the headless earlier version of the OS. Make sure to configure the network connection as you'll need it for the installation. 
 
@@ -93,7 +93,7 @@ Then press CTRL+X to save the file, and the Y key to confirm.
 This will force-connect the speaker on startup, provided the speaker is on when RPi powers up. 
 
 
-### Setting up Python 
+#### Setting up Python 
 
 Good news is that Python is already installed on RPi OS, so we can skip to the installation of the actual project files. 
 
@@ -124,13 +124,13 @@ You should now see _(catsenvironment)_ on the left of your command line. Please 
 
 7. Installing Python modules needed for the code to run.  
 
-#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI, most of the latest/standard versions would not work. Hence it's best to just figure out the latest Pi-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI, most of the latest/standard versions would not work. Hence it's best to just figure out the latest Pi-supported module version depending on your OS.
 
 Install **OpenCV** (to be able to capture images with the camera):  
 ```sudo apt install python3-opencv```  
 Install **torch**, a grand module for machine learning. It's a bit hefty and it requires some special configurations for RPi, hence the best strategy is to install using wheel. Follow this [tutorial](https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html). It's for a RPi4 but works for Zero as well provided you use BULLSEYE OS. Just scroll down to the yellow table and copy the code.  
 
-**If you've made it to here, the worst is beyond.**
+**If you've made it this far, the worst is behind you.**
 
 Install remaining modules using [pip](https://pypi.org/project/pip/). Pip is a python package manager that comes pre-installed with your Python, basically software that installs other software.  
 ``` pip install wheel```  

@@ -25,10 +25,14 @@ _Red Book_ is a curated language model, trained on texts (often books) contribut
 
 Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), coupled with a plug-n-play [microphone and speaker bundle](https://www.waveshare.com/usb-to-audio.htm).
 
+[comment]: # (The hardware specs and links are clearly listed. However, you could potentially explain the rationale behind choosing the Jetson Orin Nano over something like a Raspberry Pi. Is it purely for performance reasons?)
+
 
 ## Software
 
 The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. Specifically, we use a custom-tuned smallest version of Eleuther's [GPT-NEO](https://huggingface.co/docs/transformers/en/model_doc/gpt_neo) for language generation, and as a smaller version of [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) by Suno AI.   
+
+[comment]: # (For the "Bark" language model, you may want to expand a bit more on what type of model it is (e.g. GPT, BERT, etc) and how it was customized/fine-tuned for this use case.))
 
 
 ## Small disclaimer 
@@ -46,24 +50,24 @@ Please also note that the repository contains two main files red_book and red_bo
 
 ## Installation
 
-### Step 1: Get the Jetson Orin running 
+#### Step 1: Get the Jetson Orin running 
 
 Follow this [guide](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit#prepare) depending on your developer kit module. If your kit is not from the official developer, follow their appropriate instructions. We used [Jetpack SDK 5.0.2](https://developer.nvidia.com/embedded/jetpack-sdk-502). 
 
-### Step 2: Update the system and install Jetpack Components  
+#### Step 2: Update the system and install Jetpack Components  
 
 Open the terminal, then type:  
 ```sudo apt-get update```
 ```sudo apt-get upgrade```
 ```sudo apt-get install nvidia-jetpack```
 
-### Step 3: Install git and clone the repository
+#### Step 3: Install git and clone the repository
 
 ```sudo apt-get install git```  
 ```git clone https://github.com/modern-online/latent_intimacies.git```  
 The repository should now be in your /home folder. Clean up all the things you don't need. Also note that the /utils folder contains some simple scripts that we used for testing. 
 
-### Step 4: Set up a working directory and [virtual environment](https://docs.python.org/3/library/venv.html). 
+#### Step 4: Set up a working directory and [virtual environment](https://docs.python.org/3/library/venv.html). 
 
 A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The advantage of it is that it keeps original Python folder intact, so in case you mess something up, you can just delete the virtual environment and start again. 
 
@@ -74,9 +78,9 @@ This creates a new virtual environment in a folder called redenvironment. (In ca
 activates the virtual environment.   
 You should now see _(redenvironment)_ on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
-### Step 5: Installing Python modules
+#### Step 5: Installing Python modules
 
-#### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
 
 Install a precompiled **torch** (or you can compile but it will take a few hours):  
 Download a precompiled version [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). At the time, we used PyTorch v2.1.0 for Jetpack 5.  
@@ -91,7 +95,7 @@ Install audio drivers:
 Now install remaining modules:
 ``` pip install transformers nltk scipy sounddevice soundfile vosk ```  
 
-### Step 6: Downloading machine learning models  
+#### Step 6: Downloading machine learning models  
 
 Download a speech-to-text model of your choice (even small models work very well in English) from [here](https://alphacephei.com/vosk/models) and put it in the red book folder. 
 Download our custom fine-tuned GPT-Neo poetry model from [here](https://drive.google.com/file/d/1xbaOWP6rkfdtG4b-nqnbasEudCUlT1KE/view?usp=sharing) and put it in the red book folder.
@@ -132,6 +136,8 @@ Click _Add_
 
 This esentially allows the system to pretend to be you, executing the same sequence of actions that you would use to run the script.  
 ```sudo reboot```
-Then see if everything executes on its own!  
+Then see if everything executes on its own!
+
+Once you have the basic prototype running, you can experiment with customising the speech output. For example, you could try different voice models or audio effects, as a way of tweaking the Book's personality...
 
 DONE.
