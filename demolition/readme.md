@@ -1,6 +1,6 @@
 ## _Demolition_
 
-_Demolition_ is one of the three prototypes we built during the LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid. _Demolition_ is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. We can ask anything we want, and the voice agent will try to give the best possible answer, sampling text from this tiny, intimate dataset. It will then ask us to judge if its answer is relevant.
+_Demolition_ is one of the three prototypes we built during the LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid. _Demolition_ is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. You can ask anything you want, and the voice agent will try to supply the best possible answer, sampling text from this tiny, intimate dataset. It will then ask you to judge if its answer is relevant.
 
 
 ## Contents
@@ -10,33 +10,33 @@ _Demolition_ is one of the three prototypes we built during the LAB#03: Syntheti
 - [Software](#software)
 - [Small disclaimer](#small-disclaimer)
 - [Installation](#installation)
-- [Training Chatterbot with custom data](#training-chatterbot-with-custom-data)
+- [Training ChatterBot with custom data](#training-chatterbot-with-custom-data)
 - [Launching the script](#launching-the-script)
 - [Automation](#automation)
 
 
 ## Overview
 
-Using automation to erase unfavourable memories of past experiences liberates us from the fangs of yesterday. Confronting textual snippets of the past, stripped from their original context, can supply catharsis. At the same time, the interaction allows users to gauge and adjust their level of engagement, during the difficult process of mourning and moving on.
+Using automation to erase memories of past experiences can liberate us from the fangs of yesterday. Revisiting prior interactions through _Demolition_'s constrained interface conjures flashes of past generosity, intimacy, and care – digital residues by turns gratifying and disconcerting. Textual snippets of the past, stripped from their original context, can supply catharsis. At the same time, the interaction allows users to calibrate their engagement, asserting their agency in the difficult process of mourning and moving on. 
 
 
 ## Hardware
 
-Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), coupled with a bluetooth headset.
+Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), chosen for its superior performance and compatibility with machine learning tasks. It is paired with a Bluetooth headset to facilitate audio interactions with the device.
 
 
 ## Software
 
-The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine leaarning modules for running [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) text-to-speech (TTS) engine by Suno AI, and a small old module for training chatbots with tiny datasets, [Chatterbot](https://chatterbot.readthedocs.io/en/stable/).
+The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules for running Suno AI's [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) text-to-speech (TTS) engine, and [ChatterBot](https://chatterbot.readthedocs.io/en/stable/), a small, old module for training chatbots with tiny datasets.
 
 
 ## Small disclaimer:
 
-This is a somewhat detailed tutorial as it is aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate level project that requires some fundemantal understanding of computers as well as having dealt with creative coding in the past. For those who know their way around, the essentials are:
+This is a fairly detailed tutorial aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate-level project that requires a fundamental understanding of computers, and some prior experience of creative coding. For those who know their way around, the essentials are:
 
 1. Setting up a Jetson Orin Nano Development Kit  
 2. Pairing a bluetooth headset (or equivalent)  
-3. Installing python modules (with some proving more problematic than others, i.e. torch and Chatterbot)   
+3. Installing python modules (with some proving more problematic than others, i.e. torch and ChatterBot)   
 4. Obtraining training data, in our case, WhatsApp messages
 5. Downloading/training/fine-tuning a custom language model  
 6. Automating  
@@ -71,7 +71,7 @@ Inside the demolition folder, right-click then choose to open terminal. Type:
 This creates a new virtual environment in a folder called demolenv. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python).   
 ```source demolenv/bin/activate```  
 activates the virtual environment.   
-You should now see _(redenvironment)_ on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
+You should now see _(demolenv)_ on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
 5. Installing Python modules
 
@@ -93,18 +93,19 @@ Now install remaining modules:
 6. Downloading speech-to-text machine learning model
 Download a speech-to-text model of your choice (even small models work very well in English) from [here](https://alphacephei.com/vosk/models) and put it in the demolition folder. 
 
-7. Chatterbot compatibility issues
-There's one (or several depending on version) issues with the compatibility of Chatterbot (a relatively old Python module) and other ones that get constantly updated. If you encounter any issues we would suggest looking online as there is not one definitive solution. We encountered a yaml module incompatibility that is relatively easy to solve: 
+7. ChatterBot compatibility issues
+There's one (or several depending on version) issues with the compatibility of ChatterBot (a relatively old Python module) and other ones that get constantly updated. If you encounter any issues we would suggest looking online as there is not one definitive solution. We encountered a yaml module incompatibility that is relatively easy to solve: 
 
 Go to /demolenv/python/site-packages/chatterbot
 Open corpus.py file with a text editor
 replace _yaml.load()_ with _yaml.safe_load()_
 
+[comment]: # For ChatterBot, the compatibility issue with yaml is clearly explained. However, you could potentially expand a bit more on why you chose that specific library over alternatives.
 
-## Training Chatterbot with custom data
 
-We trained Chatterbot with our personal Whatsapp Messages. 
-Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training.
+## Training ChatterBot with custom data
+
+We trained ChatterBot with our personal WhatsApp Messages. Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training.
 
 [comment]: # (After the steps on exporting WhatsApp data, note how a user could substitute data from a different messaging platform.)
 
@@ -112,9 +113,11 @@ Things to keep in mind:
 1. If you export data from different devices (i.e. exporting from iPhone and Android), the data cleaning might be slightly different.  
 2. If you have messages in multiple languages, uniformising to a single language is necessary.  
 3. For the demolition script to work, the clean version of the data in a LIST format, must be placed in a clean_data.txt file, in clean_data subfolder within your demolition directory, like this: /clean_data/clean_data.txt  
-4. demolition_jetson.py uses a smaller random sample of the entire dataset (our WhatsApp data was quite large and therefore constant re-training becomes slow). If your data is relatively small, you can modify line 74 to increase sample_size.  
+4. demolition_jetson.py uses a smaller random sample of the entire dataset (our WhatsApp data was quite large and therefore constant re-training becomes slow). If your data is relatively small, you can modify line 74 to increase sample_size.
 
 You can use our little **scripts** for **translation** (/utils/translate.py ; you will need to additionally install [deep_translator](https://pypi.org/project/deep-translator/) module via pip) as well as **data cleaning** (/utils/clean_text_data.py) but some adjustments are likely to be required based on text formatting. 
+
+Note: While we used WhatsApp data for the prototype, you can explore using other personal data sources, such as text messages, emails, or chat logs.
 
 
 ## Launching the script

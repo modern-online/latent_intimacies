@@ -1,6 +1,6 @@
 ## _Cats_
 
-_Cats_ is one of three prototypes we built during the LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid.
+_Cats_ is one of three prototypes we built during the LAB#03: Synthetic Minds creative prototyping residency at Medialab Matadero in Madrid. This wearable device intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, _Cats_ offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
 
 ## Contents
@@ -18,29 +18,27 @@ _Cats_ is one of three prototypes we built during the LAB#03: Synthetic Minds cr
 
 ![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats_live.jpg)
 
-Essentially, _Cats_ is a wearable virtual companion. It uses computer vision to take photos, then describes those photos through image captioning using text-to-speech. It runs on a battery, operates offline, and due to its tiny architecture, takes long time to load and compute. _Cats_ takes roughly an hour to boot, then captures a photo, which takes another 45 minutes to process. Subsequently, you have a new photo description every 45 minutes, spoken aloud. The user has no control over the device, except from turning it on and off, and taking it places.
+Essentially, _Cats_ is a wearable virtual companion. It uses computer vision to take photos, then describes those photos through image captioning using text-to-speech. It runs off a battery, operates offline, and due to its tiny architecture, runs extremely slowly. _Cats_ takes roughly an hour to boot, then captures a photo, which takes another 45 minutes to process. Subsequently, you have a new photo description every 45 minutes, spoken aloud. The user has no control over the device, except from turning it on and off, and taking it places.
 
-_Cats_ stores things it sees in a text file. Every time you turn it on, it will describe everything it has seen so far. Images are not stored. 
+_Cats_ stores what it sees in a text file. Every time you turn it on, it will describe everything it has seen so far. Images are not stored.
 
 
 ## Hardware
 
-Our device runs on a [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), coupled with a compatible [battery pack](https://www.pisugar.com/), and compatible camera like [this one](https://www.adafruit.com/product/3508) (there are many camera options online, but make sure you get one with the right ribbon cable, as the one for Pi Zero is smaller than for the regular Raspberry Pi). Finally, we used a €5 bluetooth speaker but we tested Bluetooth headphones as well and got them working with a bit of a grind. If you play your cards right, the device can be built for €50-60. For putting things together, each of these items have their respective tutorials and documentation. You might need a soldering iron to solder the header pins onto the Raspberry Pi, in order for the battery to work.
-
-[comment]: # In the Hardware section, add a link to the specific Bluetooth headset you used
-[comment]: # Provide more explanation on why you chose a Raspberry Pi Zero 2W specifically, as opposed to another model
+Our device runs on a [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), chosen for its compact size and low power consumption, coupled with a compatible [battery pack](https://www.pisugar.com/), and compatible camera like [this one](https://www.adafruit.com/product/3508). There are many camera options online, but make sure you get one with the right ribbon cable, as the one for Pi Zero is smaller than for the regular Raspberry Pi. Finally, we used a €5 bluetooth speaker but we tested Bluetooth headphones as well and got them working with a bit of a grind. If you play your cards right, the device can be built for €50-60. For assembly, each of these items have their respective tutorials and documentation. You might need a soldering iron to solder the header pins onto the Raspberry Pi for the battery to work.
 
 
 ## Software
 
 In the future, we could package the OS image and code for easier setup. We could package the operating system with the code as a virtual image file, which can be easily flashed into an SD card and then plugged into a Pi Zero. 
 
-The code was written in Python, and uses [Open CV (CV2)](https://opencv.org/) computer vision module, [Smallcap](https://github.com/RitaRamo/smallcap) Image Captioning model by Rita Ramos (please follow the instructions on their GitHub page as we used their pre-trained model, and to run that you need things like COCO index and captions, also listed in the link), you, and simple old-school text-to-speeh using [espeak](https://espeak.sourceforge.net/). To run the image-captioning model, you would also need [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. 
+The code was written in Python, and uses the [Open CV (CV2)](https://opencv.org/) computer vision module for tasks like image capture and processing. We use Rita Ramos' [Smallcap](https://github.com/RitaRamo/smallcap) image captioning model, which generates descriptive text from images. Please follow the instructions on their GitHub page as we used their pre-trained model, and to run that you need things like COCO index and captions, also listed in the link. For text-to-speech, we used and simple, old-school [espeak](https://espeak.sourceforge.net/). To run the image-captioning model, you would also need [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. 
 
+[comment]: # For OpenCV, you could explain what its core functionality is (e.g. computer vision tasks like object detection).
 
 ## Small disclaimer:
 
-This is a somewhat detailed tutorial as it is aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate level project that requires some fundemantal understanding of computers as well as having dealt with creative coding in the past. For those who know their way around, the essentials are:
+This is a fairly detailed tutorial aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate-level project that requires a fundamental understanding of computers, and some prior experience of creative coding. For those who know their way around, the essentials are:
 
 1. Setting up a RPI with the required components  
 2. Installing the right OS  
@@ -79,8 +77,8 @@ Follow this [tutorial](https://pimylifeup.com/raspberry-pi-swap-file/) to increa
 
 4. Connecting a Blueetooth device (speaker or headphones). This one is a bit of a pain. This expansive albeit somewhat messy [tutorial](https://forums.raspberrypi.com/viewtopic.php?t=235519) will probably do the trick. Just read carefully and don't blindly copy-paste stuff because not all of the tutorial is relevant (i.e. the part with the USB dongle). A couple of tips:
 
-— Always turn the bluetooth device on before turning on the PI, to make sure they connect. 
-— Even after following tutorials, the PI would fail to automatically connect to our €5 speaker. What did the trick was to trust, pair the device (as explained in the tutorial), then add a line in the .bashrc file (it's a system file that executes things upon startup of the system), like this:
+- Always turn the bluetooth device on before turning on the PI, to make sure they connect. 
+- Even after following tutorials, the PI would fail to automatically connect to our €5 speaker. What did the trick was to trust, pair the device (as explained in the tutorial), then add a line in the .bashrc file (it's a system file that executes things upon startup of the system), like this:
 
 ```cd```  
 (to make sure you're in your home folder)    
@@ -112,7 +110,8 @@ to enter the folder
 to delete files related to other projects. 
 
 
-6. Setting up a working directory and a [virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The advantage of it is that it keeps original Python folder intact, so in case you mess something up, you can just delete the virtual environment and start again. 
+6. Setting up a working directory and a [virtual environment](https://docs.python.org/3/library/venv.html). 
+A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The main advantage is that it keeps original Python folder intact, so if you mess something up, you can just delete the virtual environment and start again.
 
 ```cd cats ```  
 enter cats folder    
@@ -124,7 +123,7 @@ You should now see _(catsenvironment)_ on the left of your command line. Please 
 
 7. Installing Python modules needed for the code to run.  
 
-##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI, most of the latest/standard versions would not work. Hence it's best to just figure out the latest Pi-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a PI, most of the latest/standard versions would not work. Hence it's best to just figure out the latest Pi-supported module version, depending on your OS.
 
 Install **OpenCV** (to be able to capture images with the camera):  
 ```sudo apt install python3-opencv```  
@@ -169,7 +168,7 @@ tests your opencv library and if you didn't get any errors, a photo should store
 ``` python tts_test.py ```  
 tests your text to speech and lists all available voice ids. You can then modify the cats.py code with the voice ID you like.  
 ``` python cats.py ```  
-launches the main script. It takes ages. 
+launches the main script. It takes ages.
 
 
 ## Automation

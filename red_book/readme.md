@@ -1,6 +1,6 @@
 ## _Red Book_
 
-_Red Book_ is one of three prototypes we built during the LAB#03: Synthetic Minds collaborative residency at Medialab Matadero in Madrid. Inspired by a mystical social game played by Mexican children, the _Red Book_ blends chance, prophecy, and divination to demonstrate how structured interaction with AI can evoke intimacy and connection. This README provides detailed instructions for setting up and using the _Red Book_.
+_Red Book_ is one of three prototypes we built during the LAB#03: Synthetic Minds collaborative residency at Medialab Matadero in Madrid. Inspired by a [mystical social game](https://www.reddit.com/r/occult/comments/4rfyc7/the_red_book_game_and_the_occult_opinions/) played by Mexican children, the _Red Book_ blends chance, prophecy, and divination to demonstrate how structured interaction with AI can evoke intimacy and connection. This README provides detailed instructions for setting up and using the _Red Book_.
 
 
 ## Contents
@@ -16,28 +16,22 @@ _Red Book_ is one of three prototypes we built during the LAB#03: Synthetic Mind
 
 ## Overview
 
-_Red Book_ is a curated language model, trained on texts (often books) contributed by its users. A group looking for answers designates a spokesperson to address the book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, interpreting the needs and interests of others in the group. Some questions linger, unanswered. As the interaction draws to a close, the speaker seeks permission to leave.
-
-[comment]: # (Provide a concrete example of the type of texts/books that might be used to train the Red Book model. This will help users understand the content better.)
+_Red Book_ is a curated language model, trained on the favourite texts of a close-knit group (poetry, novels, political manifestos, books of prophecy, newspaper opinion columns, etc.). Breathing life into a corpus of texts, the language model uses its training sources to prompt dialogue and facilitate discussion. A group looking for answers designates a spokesperson to address the book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, interpreting the needs and interests of others in the group. Some questions linger, unanswered. As the interaction draws to a close, the speaker seeks permission to leave.
 
 
 ## Hardware
 
-Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), coupled with a plug-n-play [microphone and speaker bundle](https://www.waveshare.com/usb-to-audio.htm).
-
-[comment]: # (The hardware specs and links are clearly listed. However, you could potentially explain the rationale behind choosing the Jetson Orin Nano over something like a Raspberry Pi. Is it purely for performance reasons?)
+Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), chosen for its performance and compatibility with machine learning tasks. It is paired with a plug-n-play [microphone and speaker bundle](https://www.waveshare.com/usb-to-audio.htm) to facilitate audio interactions with the device.
 
 
 ## Software
 
-The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. Specifically, we use a custom-tuned smallest version of Eleuther's [GPT-NEO](https://huggingface.co/docs/transformers/en/model_doc/gpt_neo) for language generation, and as a smaller version of [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) by Suno AI.   
-
-[comment]: # (For the "Bark" language model, you may want to expand a bit more on what type of model it is (e.g. GPT, BERT, etc) and how it was customized/fine-tuned for this use case.))
+The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. Specifically, we use a custom-tuned smallest version of Eleuther's [GPT-NEO](https://huggingface.co/docs/transformers/en/model_doc/gpt_neo) for language generation, and a smaller version of [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark), a fully generative text-to-audio model by Suno AI.
 
 
 ## Small disclaimer 
 
-This is a somewhat detailed tutorial as it is aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate level project that requires some fundamental understanding of computers as well as having dealt with creative coding in the past. For those who know their way around, the essentials are:
+This is a fairly detailed tutorial aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate-level project that requires a fundamental understanding of computers, and some prior experience of creative coding. For those who know their way around, the essentials are:
 
 1. Setting up a Jetson Orin Nano Development Kit  
 2. Adding speakers and microphone  
@@ -110,12 +104,12 @@ Download nltk punkt. In terminal, type:
 
 Open terminal in the red book folder, activate the virtual environment, then type:   
 ```python red_book_jetson.py```   
-The first launch will take some time, as transformers library will download the Bark model. 
+The first launch will take some time, as transformers library will download the Bark model. This is a one-time process, and subsequent launches will be faster.
 
 
 ## Automation 
 
-Once all your scripts are running with success, you can automate the launch of _Red Book_, by adding the procedure to .bashrc (a system-level script that executes when you open the terminal): 
+Once all your scripts are running with success, you can automate the launch of _Red Book_, by adding the procedure to .bashrc. This ensures that the script runs automatically every time you open the terminal, streamlining the setup process and saving time:
 
 Open terminal.  
 ```cd```  

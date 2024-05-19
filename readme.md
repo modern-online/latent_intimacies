@@ -46,13 +46,13 @@ Exit. Exist. Enter. Erase. Repeat.
 
 ![red book](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_live.jpg)
 
-Inspired by a mystical social game played by Mexican children, _Red Book_ blends chance, prophecy, and divination. Playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement; leaving without permission may have undesirable consequences.
+Inspired by a mystical social game played by Mexican children, _Red Book_ blends chance, prophecy, and divination. Playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
 
 The future is uncertain. People experience uncertainty as a source of discomfort and unease. It can leave them feeling vulnerable and precarious, threatening what they know of their place in the world. Given this, who do people turn to for answers, advice, guidance?
 
-_Red Book_ is an actively curated language model, trained on a corpus of user-contributed texts. This enables any set of materials to become animated and agential, if still opaque. Stopping short of providing definitive answers, the recombined sources prompt dialogue, surfacing prompts for discussion and collective meaning-making.
+_Red Book_ is an curated language model, trained on the favourite books of a close-knit group. Breathing life into a corpus of texts, the language model uses its recombined sources to prompt dialogue, creating a surface for discussion and collective meaning-making.
 
-A group looking for answers designates a spokesperson to address the Book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, interpreting the needs and interests of others in the group. Some questions linger, unanswered. As the interaction draws to a close, the speaker seeks permission to leave. 
+A group looking for answers designates a spokesperson to address the Book, much as one would a voice-activated digital assistant. Once activated, the speaker delivers prompts and questions, channeling the group's curiosities and yearnings. Some questions linger unanswered. As the interaction draws to a close, the speaker must seek permission to leave.
 
 > "Your presence is no longer required."
 
