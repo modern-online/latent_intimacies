@@ -74,7 +74,7 @@ You should now see _(redenvironment)_ on the left of your command line. Please r
 
 #### Step 5: Installing Python modules
 
-##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version, depending on your OS.
 
 Install a precompiled **torch** (or you can compile but it will take a few hours):  
 Download a precompiled version [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). At the time, we used PyTorch v2.1.0 for Jetpack 5.  
@@ -116,7 +116,7 @@ Open terminal.
 to make sure we're in home directory  
 ```sudo nano .bashrc```   
 to edit the file. Scroll to the bottom, and after the bluetooth config lines, add:  
-```sleep 40```  (it will wait 40s before launching the script to make sure all other system processes kick in)  
+```sleep 40``` (it will wait 40sec before launching the script to make sure all other system processes kick in)  
 ```cd /home/[path to red_book folder] &&```  
 ```source redenvironment/bin/activate &&```  
 ```python red_book_jetson.py```  

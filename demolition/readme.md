@@ -27,7 +27,7 @@ Our device runs on a [Jetson Orin Nano Developer Kit with a 8GB VRAM module](htt
 
 ## Software
 
-The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules for running Suno AI's [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) text-to-speech (TTS) engine, and [ChatterBot](https://chatterbot.readthedocs.io/en/stable/), a small, old module for training chatbots with tiny datasets.
+The code was written in Python, and uses [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules for running Suno AI's fully generative [Bark](https://huggingface.co/docs/transformers/en/model_doc/bark) text-to-speech (TTS) engine, and [ChatterBot](https://chatterbot.readthedocs.io/en/stable/), a small, old module for training chatbots with tiny datasets.
 
 
 ## Small disclaimer:
@@ -60,22 +60,22 @@ Open the terminal, then type:
 3.  Install git and clone the repository  
 ```sudo apt-get install git```  
 ```git clone https://github.com/modern-online/latent_intimacies.git```  
-The repository should now be in your /home folder. Clean up all the things you don't need. Also note that /utils folder contains some simple scripts that we used for testing along the way. 
+The repository should now be in your /home folder. Clean up all the things you don't need. Also note that /utils folder contains some simple scripts that we used for testing. 
 
 4. Setting up a working directory and a [virtual environment](https://docs.python.org/3/library/venv.html). 
 
-A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The advantage of it is that it keeps original Python folder intact, so in case you mess something up, you can just delete the virtual environment and start again. 
+A virtual environment is like a contained folder that holds all the modules and items necessary for your code to run. The main advantage is that it keeps original Python folder intact, so if you mess something up, you can just delete the virtual environment and start again.
 
 Inside the demolition folder, right-click then choose to open terminal. Type:  
 ```python -m venv demolenv```  
-This creates a new virtual environment in a folder called demolenv. (In case you get an error message saying no such command as venv exists, follow what the error says to install the venv module for Python).   
+This creates a new virtual environment in a folder called demolenv. (If you get an error message saying no such command as venv exists, follow the suggested fix and install the venv module for Python).   
 ```source demolenv/bin/activate```  
-activates the virtual environment.   
+activates the virtual environment.
 You should now see _(demolenv)_ on the left of your command line. Please read the above documentation link to understand how virtual environments work. You are now ready to install the actual project. 
 
 5. Installing Python modules
 
-##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version depending on your OS.
+##### Another little disclaimer for those who know their way around: Typically, I would export a requirements file listing all the needed modules, but since we're building things on a Jetson, many standard versions would not work. Hence it's best to just install the latest Jetson-supported module version, depending on your OS.
 
 Install a precompiled **torch** (or you can compile but it will take a few hours):  
 Download a precompiled version [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). At the time, we used PyTorch v2.1.0 for Jetpack 5.  
@@ -105,7 +105,7 @@ replace _yaml.load()_ with _yaml.safe_load()_
 
 ## Training ChatterBot with custom data
 
-We trained ChatterBot with our personal WhatsApp Messages. Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training.
+We trained ChatterBot on a selection of our personal WhatsApp messages, chosen for their intimate and personal nature. Have a look at this brief [tutorial](https://maazirfan.medium.com/building-a-chatbot-from-whatsapp-conversations-a-step-by-step-tutorial-48290cd458ef) on how to obtain data from WhatsApp and prepare it for training.
 
 [comment]: # (After the steps on exporting WhatsApp data, note how a user could substitute data from a different messaging platform.)
 
