@@ -1,9 +1,9 @@
 # _Latent Intimacies_
 
-#### _Latent Intimacies_ is a collaborative design project using open-source speech synthesis and generative language models to explore new forms of human-machine intimacy. Producing three technical prototypes, we investigated how these technologies can evoke feelings of latency, vulnerability, and connection. Rather than chasing fluid, seamless interactions, our prototypes work with and build on existing technologies' constraints, using these to model alternative human-machine trajectories.
+_Latent Intimacies_ is a collaborative design project using open-source speech synthesis and generative language models to explore new forms of human-machine intimacy. Producing three technical prototypes, we investigated how these technologies can evoke feelings of latency, vulnerability, and connection. Rather than chasing fluid, seamless interactions, our prototypes work with and build on existing technologies' constraints, using these to model alternative human-machine trajectories.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zu9hHpA1EZU?si=9iQ7nG1ZN4HUjW5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Video here](https://img.youtube.com/vi/zu9hHpA1EZU/0.jpg)](https://www.youtube.com/watch?v=zu9hHpA1EZU)
 
 
 ## Contents
