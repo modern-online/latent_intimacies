@@ -2,7 +2,7 @@
 
 _Latent Intimacies_ is a collaborative design project using open-source speech synthesis and generative language models to explore new forms of human-machine intimacy. Producing three technical prototypes, we investigated how these technologies can evoke feelings of latency, vulnerability, and connection. Rather than chasing fluid, seamless interactions, our prototypes work with and build on existing technologies' constraints, using these to model alternative human-machine trajectories.
 
-Project's presentation at Medialab Matadero:
+Watch the project's presentation at Medialab Matadero:
 <a href="https://www.youtube.com/watch?v=zu9hHpA1EZU">
   <img src="https://img.youtube.com/vi/zu9hHpA1EZU/maxresdefault.jpg" alt="Latent Intimacies, OpenLab#03" width="800" height="450">
 </a>
