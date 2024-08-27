@@ -34,8 +34,6 @@ In the future, we could package the OS image and code for easier setup. We could
 
 The code was written in Python, and uses the [Open CV (CV2)](https://opencv.org/) computer vision module for tasks like image capture and processing. We use Rita Ramos' [Smallcap](https://github.com/RitaRamo/smallcap) image captioning model, which generates descriptive text from images. Please follow the instructions on their GitHub page as we used their pre-trained model, and to run that you need things like COCO index and captions, also listed in the link. For text-to-speech, we used and simple, old-school [espeak](https://espeak.sourceforge.net/). To run the image-captioning model, you would also need [Pytorch](https://pytorch.org/) and [Transformers](https://huggingface.co/docs/transformers/en/index) machine learning modules. 
 
-[comment]: # For OpenCV, you could explain what its core functionality is (e.g. computer vision tasks like object detection).
-
 ## Small disclaimer:
 
 This is a fairly detailed tutorial aimed at our principal audience, artists and designers fiddling with tech. It is an intermediate-level project that requires a fundamental understanding of computers, and some prior experience of creative coding. For those who know their way around, the essentials are:
