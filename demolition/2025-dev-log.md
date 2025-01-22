@@ -1,10 +1,10 @@
-1 — CORE: 
-1.1 Flashed Jetpack 6.0 (Jetson Orin NX 16GB) 
-Needed Ubuntu 22.04 computer, USB-C cable 
-1.2. U: demolition | Pwd: l4tent!
-1.2 Updated the system (use apt — NOT apt-get — because Jetson only partially supported by OS)
-1.3 Installed Firefox (snap install firefox)
-1.4 Installed full package of Pipewire and wireplumber (audio servers to heal deal with I2S amp and mic). 
+1 — CORE:  
+1.1 Flashed Jetpack 6.0 (Jetson Orin NX 16GB)
+Needed Ubuntu 22.04 computer, USB-C cable
+1.2 U: demolition | Pwd: l4tent!
+1.3 Updated the system (use apt — NOT apt-get — because Jetson only partially supported by OS)
+1.4 Installed Firefox (snap install firefox)
+1.5 Installed full package of Pipewire and wireplumber (audio servers to heal deal with I2S amp and mic). 
 Used this guide : https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-pulseaudio-ubuntu-2204/ 
 Had to restart the system for Pipewire to take effect
 1.5 Installed VS code using this Github repo : https://github.com/JetsonHacksNano/installVSCode
