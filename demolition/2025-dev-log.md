@@ -1,4 +1,4 @@
-1 — CORE:  
+<b>1 — CORE:</b>  
 1.1 Flashed Jetpack 6.0 (Jetson Orin NX 16GB)  
 Needed Ubuntu 22.04 computer, USB-C cable  
 1.2 Updated the system (use apt — NOT apt-get — because Jetson only partially supported by OS)  
@@ -29,7 +29,7 @@ PIN12 — BLCK (shared with amp)
 sudo /opt/nvidia/jetson-io/jetson-io.py
 Configure manually to enable I2S  
 
-3 — Project files
+<b>3 — Project files</b>
 
 3.1. Copied 
 demolition_jetson_v2.py
@@ -40,7 +40,7 @@ Pre-recorded "thinking" audio files
 3.2. Cleaned "thinking" directory's hidden files 
 (otherwise unnecessary files break the code when monitoring folder)
 
-4 — Python modules
+<b>4 — Python modules</b>
 
 4.1. Created virtual environment .venv 
 4.2. Start with chatterbot as it's the oldest one (and tf contains older dependencies) 
@@ -72,11 +72,11 @@ Failed to build, pip install chatterbot==1.0.4 worked
 4.11. Bug with playing any audio from python. Ended removing sounddevice module. 
 	User subprocess instead to play audio directly via alsa 
 
-5 — File order
+<b>5 — File order</b>
 
 5.1 Created appropriate folder structure based on error messages 
 
-6 – Autostart
+<b>6 – Autostart</b>
 
 6.1 Created autostart_demolition.sh 
 6.2 Added silent audio to autostart to run in background (to prevent I2S from switching off and popping):
