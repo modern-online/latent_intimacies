@@ -8,7 +8,7 @@ Used this guide : https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-
 Had to restart the system for Pipewire to take effect  
 1.5 Installed VS code using this Github repo : https://github.com/JetsonHacksNano/installVSCode  
 
-2 — I2S MIC and I2S AMP setup 
+<b>2 — I2S MIC and I2S AMP setup</b> 
 
 2.1 Wiring
 Adafruit SPH0645 Mic :
