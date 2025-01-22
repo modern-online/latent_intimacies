@@ -6,31 +6,25 @@ from transformers import AutoProcessor, BarkModel
 from scipy.io.wavfile import write as write_wav
 from vosk import Model, KaldiRecognizer
 from optimum.bettertransformer import BetterTransformer
-import gc
 import pyaudio
-import sounddevice as sd
-import soundfile as sf
 from num2words import num2words
-from time import sleep
 import os
 import time
 from random import randint, choices
 import ast
 import torch
+import subprocess
+#import gc
 
 response = ""
 
 dataset = "data.txt"
 
 # FIXED REPONSE LISTS
-negative = [f for f in os.listdir("./fixed_audio_data/negative/") if f != ".DS_Store"]
-positive = [f for f in os.listdir("./fixed_audio_data/positive/") if f != ".DS_Store" ]
-satisfaction = [f for f in os.listdir("./fixed_audio_data/satisfaction/") if f != ".DS_Store" ]
 thinking = [f for f in os.listdir("./fixed_audio_data/thinking/") if f != ".DS_Store" ]
 generated_tts = "tts.wav"
 
 os.environ["SUNO_OFFLOAD_CPU"] = "True"
-#os.environ["SUNO_USE_SMALL_MODELS"] = "True"
 
 # download and load all models
 print("LOADING MODELS")
@@ -40,44 +34,32 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print("LOADING BARK")
 processor = AutoProcessor.from_pretrained("suno/bark-small")
 model_bark = BarkModel.from_pretrained("suno/bark-small", torch_dtype=torch.float32)
-time.sleep(5)
-#print("TRANSFERING TO GPU")
-#gc.collect()
-#print(f'Available GPU Memory: {torch.cuda.get_device_properties(0).total_memory}')
-#print(f'Reserved GPU Memory: {torch.cuda.memory_reserved(0)}')
-#print(f'Allocated GPU Memory: {torch.cuda.memory_allocated(0)}')
-#model_bark = model_bark.cuda()
-#print(f'Allocated GPU Memory post GPU loading: {torch.cuda.memory_allocated(0)}')
-#print("TRANSFERED")
-time.sleep(5)
 sample_rate = model_bark.generation_config.sample_rate
-#model_bark = model_bark.to_bettertransformer()
 model_bark = BetterTransformer.transform(model_bark, keep_original_model=False)
 model_bark.enable_cpu_offload()
 print("LOADED BARK")
-time.sleep(5)
+time.sleep(1)
+
 model = Model(r"vosk-model-small-en-us-0.15")
 recognizer = KaldiRecognizer(model, 16000)
 print("LOADED VOSK")
 
-time.sleep(5)
+time.sleep(1)
 
 print("MOVING BARK TO GPU")
 torch.cuda.empty_cache()
 for param in model_bark.parameters():
-    print(param.data) 
+    #print(param.data) 
     param.data = param.data.to(device)
 print("FINISHED LOADING")
 
-time.sleep(5)
+time.sleep(1)
 
 # Mic Stream
 print("INITIALIZING MIC")
 mic = pyaudio.PyAudio()
-time.sleep(1)
-stream = mic.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)
-time.sleep(3)
 print("MIC INTITIALIZED")
+time.sleep(1)
 
 def process_and_train():
     start_time = time.time()
@@ -138,9 +120,11 @@ def demolish_data(sentence):
 
 def play_audio(container, file):
     filename = f'./fixed_audio_data/{container}/{file}'
-    data, fs = sf.read(filename, dtype='float32')  
-    sd.play(data, fs)
-    status = sd.wait()  # Wait until file is done playing 
+    command = ["aplay", filename]
+    try:
+        subprocess.run(command, check=True)
+    except subprocess.CalledProcessError as e:
+        print("Error playing audio")
 
 try:
     
@@ -148,10 +132,10 @@ try:
     remaining_entries = process_and_train()
     
     print("LISTENING")
-    play_audio("thinking", thinking[randint(0, len(negative)-1)]);
+    play_audio("thinking", thinking[randint(0, len(thinking)-1)])
     time.sleep(3)
     
-    stream = mic.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)
+    stream = mic.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=4096)
     human = ""
 
     while True:
@@ -171,19 +155,7 @@ try:
                     print(human)
                     stream.stop_stream()
                     
-                    play_audio("thinking", thinking[randint(0, len(negative)-1)]);
-
-#                    if human.strip() == "yes":
-#                        play_audio("positive", positive[randint(0, len(negative)-1)]);
-                    
-#                    elif human.strip() == "no":
-#                        play_audio("negative", negative[randint(0, len(negative)-1)]);
-#                        demolish_data(response)
-#                        process_and_train()
-
-#                    else: 
-
-                        #play_audio("thinking", thinking[randint(0, len(negative)-1)]);
+                    play_audio("thinking", thinking[randint(0, len(thinking)-1)])
 			
                     print("GENERATING")
                     start_time = time.time()
@@ -217,13 +189,9 @@ try:
                     print("TIME IT TOOK: ")
                     print(str(time.time() - start_time) + "s.")
                     
-                    # Ask if this response has been satisfactory
-#                    play_audio("satisfaction", satisfaction[randint(0, len(negative)-1)])
-                    
-                    
                     human = ""
 
-                    sleep(1)
+                    time.sleep(1)
 
 
         except Exception as e:
