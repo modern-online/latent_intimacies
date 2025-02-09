@@ -66,7 +66,10 @@ A group looking for answers designates a spokesperson to address the Book, much 
 ## Study #3: _Cats_
 ### Intimacy through latency, the delay between a cause and its effect.
 
+V1
 ![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg)
+V2
+![cats_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01633.jpg?raw=true)
 
 This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, _Cats_ offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
