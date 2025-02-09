@@ -7,7 +7,7 @@ _Latent Intimacies_ is a collaborative project using open-source speech synthesi
 Watch the project's [presentation](https://www.youtube.com/watch?v=zu9hHpA1EZU) at Medialab Matadero.  
 
 <a href="https://www.youtube.com/watch?v=zu9hHpA1EZU">
-  <img src="https://img.youtube.com/vi/zu9hHpA1EZU/maxresdefault.jpg" alt="Latent Intimacies, OpenLab#03" width="800" height="450">
+  <img src="https://img.youtube.com/vi/zu9hHpA1EZU/maxresdefault.jpg" alt="Latent Intimacies, OpenLab#03">
 </a>
 
 
