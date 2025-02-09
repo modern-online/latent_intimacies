@@ -21,7 +21,8 @@ MAX98357A amp:
 PIN2 — 5V  
 PIN6 — GND  
 PIN40 — DIN  
-PIN35 — LRCL (shared with amp) PIN12 — BLCK (shared with amp)  
+PIN35 — LRCL (shared with amp)   
+PIN12 — BLCK (shared with amp)  
   
 2.2 Configuring pins to enable I2S: sudo /opt/nvidia/jetson-io/jetson-io.py  
 Configure manually to enable I2S  
