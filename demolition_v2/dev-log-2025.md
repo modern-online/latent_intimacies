@@ -1,4 +1,4 @@
-1 — CORE:
+1 — CORE:  
 1.1 Flashed Jetpack 6.0 (Jetson Orin NX 16GB)  
 Needed Ubuntu 22.04 computer, USB-C cable  
 1.2 Updated the system (use apt — NOT apt-get — because Jetson only partially supported by OS)  
@@ -8,37 +8,36 @@ Used this guide : https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-
 Had to restart the system for Pipewire to take effect  
 1.5 Installed VS code using this Github repo : https://github.com/JetsonHacksNano/installVSCode  
 
-2 — I2S MIC and I2S AMP setup
-
-2.1 Wiring
-Adafruit SPH0645 Mic :
-PIN1 — 3V
-PIN9 — GND
-PIN38 — DOUT
-PIN35 — LRCL (shared with amp)
-PIN12 — BLCK (shared with amp)
-
-MAX98357A amp
-PIN2 — 5V
-PIN6 — GND
-PIN40 — DIN
-PIN35 — LRCL (shared with amp) PIN12 — BLCK (shared with amp)
-
-2.2 Configuring pins to enable I2S: sudo /opt/nvidia/jetson-io/jetson-io.py
-Configure manually to enable I2S
-
-3 — Project files
-
-3.1. Copied
-demolition_jetson_v2.py
-clean_data.txt (dataset)
-vosk-model-small-en-us-0.15
-Pre-recorded "thinking" audio files
-
-3.2. Cleaned "thinking" directory's hidden files
-(otherwise unnecessary files break the code when monitoring folder)
-
-4 — Python modules
+2 — I2S MIC and I2S AMP setup  
+2.1 Wiring  
+Adafruit SPH0645 Mic:  
+PIN1 — 3V  
+PIN9 — GND  
+PIN38 — DOUT  
+PIN35 — LRCL (shared with amp)  
+PIN12 — BLCK (shared with amp)  
+  
+MAX98357A amp 
+PIN2 — 5V  
+PIN6 — GND  
+PIN40 — DIN  
+PIN35 — LRCL (shared with amp) PIN12 — BLCK (shared with amp)  
+  
+2.2 Configuring pins to enable I2S: sudo /opt/nvidia/jetson-io/jetson-io.py  
+Configure manually to enable I2S  
+  
+3 — Project files  
+  
+3.1. Copied. 
+demolition_jetson_v2.py  
+clean_data.txt (dataset)  
+vosk-model-small-en-us-0.15  
+Pre-recorded "thinking" audio files  
+  
+3.2. Cleaned "thinking" directory's hidden files. 
+(otherwise unnecessary files break the code when monitoring folder)  
+  
+4 — Python modules  
 
 4.1. Created virtual environment .venv
 4.2. Start with chatterbot as it's the oldest one (and tf contains older dependencies)
