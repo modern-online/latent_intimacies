@@ -17,7 +17,7 @@ PIN38 — DOUT
 PIN35 — LRCL (shared with amp)  
 PIN12 — BLCK (shared with amp)  
   
-MAX98357A amp 
+MAX98357A amp:   
 PIN2 — 5V  
 PIN6 — GND  
 PIN40 — DIN  
