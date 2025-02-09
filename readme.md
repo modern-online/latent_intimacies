@@ -34,7 +34,10 @@ What else could AI be? We approached the language model as a minor technology, d
 ## Study #1: _Demolition_
 ### Intimacy through vulnerability, the capacity to be damaged or harmed.
 
+V1
 ![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
+V2
+![demolition_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01615.jpg)
 
 Our first study, _Demolition_, is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. You can ask the voice agent anything you want, and it will try to supply the best possible answer, sampling text from this tiny, intimate dataset.
 
@@ -50,7 +53,10 @@ Exit. Exist. Enter. Erase. Repeat.
 ## Study #2: _Red Book_
 ### Intimacy through protocol, a codified series of guidelines that facilitate orderly interaction, through a shared understanding of the rules of engagement. 
 
+V1
 ![red book](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_new_new.jpg)
+V2
+![red book_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01555.jpg)
 
 Inspired by a mystical social game played by Mexican children, _Red Book_ blends chance, prophecy, and divination. Playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
 
