@@ -60,7 +60,7 @@ Exit. Exist. Enter. Erase. Repeat.
 V1
 ![red book](https://github.com/modern-online/latent_intimacies/blob/main/images/red_book_new_new.jpg)
 V2
-![red book_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01555.jpg)
+![red book_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01741_e_web2.jpg?raw=true)
 
 Inspired by a mystical social game played by Mexican children, _Red Book_ blends chance, prophecy, and divination. Playing the game requires a set of protocols for activation and engagement, while stressing the importance of disengagement. Leaving without permission may have undesirable consequences.
 
