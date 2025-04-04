@@ -41,7 +41,7 @@ What else could AI be? We approached the language model as a minor technology, d
 V1
 ![demolition](https://github.com/modern-online/latent_intimacies/blob/main/images/demolition.jpg)
 V2
-![demolition_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01615.jpg)
+![demolition_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01810_e_web.jpg?raw=true)
 
 Our first study, _Demolition_, is site-specific, a block of concrete encapsulating half a dozen WhatsApp chats, our online interactions with those friends and family members who agreed to take part. You can ask the voice agent anything you want, and it will try to supply the best possible answer, sampling text from this tiny, intimate dataset.
 
@@ -79,7 +79,7 @@ A group looking for answers designates a spokesperson to address the Book, much 
 V1
 ![cats](https://github.com/modern-online/latent_intimacies/blob/main/images/cats.jpg)
 V2
-![cats_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01633.jpg?raw=true)
+![cats_v2](https://github.com/modern-online/latent_intimacies/blob/main/images/DSC01783_e2_web.jpg?raw=true)
 
 This study intertwines the daily lives of cats, their caretakers, and the community. A tiny AI narrator, _Cats_ offers a unique perspective on the world. Translating snapshots from a cat-worn camera into basic spoken texts, the AI emulates a cat. It sticks around, but sets its own pace, providing pleasure, ungoverned, on its own terms.
 
